@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other-rooms style files */
+
+@use "./sass/main";
+
+//html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+
+.banner-bottom-sheet * {
+    padding: 0px !important;
+    background-color: #A6936E !important;
+
+}
+
+

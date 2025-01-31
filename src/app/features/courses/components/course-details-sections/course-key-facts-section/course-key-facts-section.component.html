@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div class="content">
+    <h3 class="h1">{{ 'courseDetails.keyFacts.title' | translate }}</h3>
+    <ul class="list">
+      <div>
+        <li>
+          <b class="list-item">{{ 'courseDetails.keyFacts.duration' | translate }} </b>{{ duration }}
+        </li>
+        <li>
+          <b class="list-item">{{ 'courseDetails.keyFacts.language' | translate }} </b>{{ language }}
+        </li>
+        <li>
+          <b class="list-item">{{ 'courseDetails.keyFacts.location' | translate }} </b>{{ location }}
+        </li>
+      </div>
+      <li>
+        <b class="list-item">{{ 'courseDetails.keyFacts.times' | translate }} </b>{{ times }}
+      </li>
+      <li>
+        <b class="list-item">{{ 'courseDetails.keyFacts.fee' | translate }} </b>{{ price | currency:"EUR" }}
+      </li>
+      <li>
+        <b class="list-item">{{ 'courseDetails.keyFacts.level' | translate }} </b>{{ level }}
+      </li>
+    </ul>
+    <div>
+      <p class="extra-small-text">{{ 'courseDetails.keyFacts.info' | translate }}</p>
+      <p class="extra-small-text">{{ 'courseDetails.keyFacts.infoSmall' | translate }} <a class="extra-small-text link" routerLink="/payment-and-financing">{{ 'courseDetails.keyFacts.link' | translate }}</a>..</p></div>
+  </div>
+  <div class="imageWrapper">
+    <img fill ngSrc="/images/students/courseDetails-students.jpg" alt="">
+
+  </div>
+</div>

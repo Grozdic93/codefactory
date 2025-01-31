@@ -1,0 +1,161 @@
+[data-theme=light] {
+  --bg-light: #f5f5f5;
+  --bg-neutral: #333;
+  --bg-dark: black;
+  --bg-accent:#900000;
+  --bg-accent-gold: #A6936E;
+  --text-light: #f5f5f5;
+  --text-neutral: #333;
+  --text-dark: black;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 100% /.7);
+  --transparent-dark: hsla(0 0% 0% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: white;
+  --bg-gradient-normal: #f5f5f5;
+  --scoller-clr: #FEFEFE;
+  --transparent: transparent;
+}
+
+:root {
+  --swich-color: #4a4e69;
+  --swich-background: #f4f3f2;
+}
+
+[data-theme=dark] {
+  --swich-color: #c9ada7;
+  --background: #11112a;
+  --bg-light: #333;
+  --bg-neutral: black;
+  --bg-dark: #f5f5f5;
+  --bg-accent:#A6936E;
+  --bg-accent-gold: #A6936E;
+  --text-light: black;
+  --text-neutral: black;
+  --text-dark: #f5f5f5;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 0% /.7);
+  --transparent-dark: hsla(0 0% 100% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: #333;
+  --bg-gradient-normal: #444;
+  --scoller-clr: #333333;
+  --transparent: #A6936E;
+}
+
+:root {
+  --dropdown-link-font-size: .8rem;
+}
+
+h6 {
+  font-weight: 900;
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 45em) {
+  h6 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.team {
+  display: flex;
+  min-height: 400px;
+  max-width: 100%;
+  justify-content: center;
+}
+.team > * {
+  width: 90%;
+  height: 90%;
+  flex: 1;
+}
+.team .team-member {
+  box-sizing: border-box;
+  position: relative;
+}
+.team .team-member__image {
+  transition: 500ms;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  filter: drop-shadow(-6px -2px 12px black);
+}
+.team .team-member:hover img {
+  scale: 0.98;
+  translate: 5px 5px;
+  filter: drop-shadow(-2px -2px 4px black);
+}
+.team .team-member::before {
+  content: "";
+  width: 0;
+  height: 0;
+  box-sizing: inherit;
+  margin-top: 30px;
+  margin-bottom: -30px;
+  border: 3px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.team .team-member:hover::before {
+  width: 50%;
+  height: 70%;
+  border-top-color: var(--bg-accent-gold);
+  border-right-color: var(--bg-accent-gold);
+}
+@media screen and (max-width: 65em) {
+  .team {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.title {
+  text-shadow: 0 0 3px var(--bg-light);
+  opacity: 0;
+  font-size: 22px;
+  color: var(--bg-accent);
+  margin-bottom: 50px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transition: all 1s;
+  z-index: 9;
+}
+
+.title > span {
+  opacity: 0;
+  font-size: 16px;
+  display: block;
+  color: var(--bg-accent);
+}
+
+.team-member:hover .container .title,
+.team-member:hover .container .desc {
+  left: 70%;
+  opacity: 1;
+}
+.team-member:hover .container .title span,
+.team-member:hover .container .desc span {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=meet-the-team.component.css.map */

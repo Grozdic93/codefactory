@@ -1,0 +1,16 @@
+.wrapper {
+  min-height: 100lvh;
+}
+
+.center {
+  text-align: center;
+  align-content: center;
+}
+.center.not-found {
+  height: 80lvh;
+}
+.center.error {
+  color: red;
+}
+
+/*# sourceMappingURL=course-details.component.css.map */

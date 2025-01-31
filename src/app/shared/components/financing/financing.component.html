@@ -1,0 +1,108 @@
+<app-section>
+  <div class="wrapper">
+    <h6 class="financing-title">{{ "financing.title" | translate }}</h6>
+    <div class="financing-cards">
+      <div
+        *ngIf="
+          !course ||
+          getFinancingOptions('AMS/WAFF').length > 0 ||
+          getFinancingOptions('AMS').length > 0 ||
+          getFinancingOptions('WAFF').length > 0
+        "
+        class="financing-option"
+      >
+        <div class="financing-option__img">
+          <img
+            width="250"
+            height="250"
+            [ngSrc]="'./images/financing/AMS-WAFF.png'"
+            alt="payment minimalistic image"
+            priority
+          />
+        </div>
+        <div class="financing-option__description">
+          @if ((course && getFinancingOptions('AMS/WAFF').length > 0) ||
+          !course) {
+          <h5>{{ "financing.ams.titleAmsWaff" | translate }}</h5>
+          } @if (course && getFinancingOptions('AMS').length > 0) {
+          <h5>{{ "financing.ams.titleAms" | translate }}</h5>
+          } @if (course && getFinancingOptions('WAFF').length > 0) {
+          <h5>{{ "financing.ams.titleWaff" | translate }}</h5>
+          } @if (course && getFinancingOptions('erste').length > 0) {
+          <h5>{{ "financing.erste.title" | translate }}</h5>
+          }
+
+          <!--          <p>{{ 'financing.ams.description' | translate }}</p>-->
+          <ng-content select="[ams]"></ng-content>
+        </div>
+      </div>
+
+      <div
+        *ngIf="!course || getFinancingOptions('partial').length > 0"
+        class="financing-option"
+      >
+        <div class="financing-option__img">
+          <img
+            width="250"
+            height="250"
+            [ngSrc]="'./images/financing/PARTIAL.png'"
+            alt="partial payment minimalistic image"
+            priority
+          />
+        </div>
+        <div class="financing-option__description">
+          <h5>{{ "financing.partial.title" | translate }}</h5>
+          <!--          <p>{{ 'financing.partial.description' | translate }}</p>-->
+          <ng-content select="[partial]"></ng-content>
+        </div>
+      </div>
+      <div
+        *ngIf="!course || getFinancingOptions('erste').length > 0"
+        class="financing-option"
+      >
+        <div class="financing-option__img">
+          <img
+            width="250"
+            height="250"
+            [ngSrc]="'./images/financing/erste.png'"
+            alt="partial payment minimalistic image"
+            priority
+          />
+        </div>
+        <div class="financing-option__description">
+          <h5>{{ "financing.erste.title" | translate }}</h5>
+          <!--          <p>{{ 'financing.erste.description' | translate }}</p>-->
+          <ng-content select="[erste]"></ng-content>
+        </div>
+      </div>
+
+      <div
+        *ngIf="!course || getFinancingOptions('employer').length > 0"
+        class="financing-option"
+      >
+        <div class="financing-option__img">
+          <img
+            width="250"
+            height="250"
+            [ngSrc]="'./images/financing/EMPLOYER.png'"
+            alt="payment minimalistic image"
+            priority
+          />
+        </div>
+        <div class="financing-option__description">
+          <h5>{{ "financing.employer.title" | translate }}</h5>
+          <!--          <p>{{ 'financing.employer.description' | translate }}</p>-->
+          <ng-content select="[employer]"></ng-content>
+        </div>
+      </div>
+    </div>
+    <div class="financing-buttons">
+      <button mat-fab extended (click)="openDialog()">
+        {{ "financing.buttonGetEstimate" | translate }}
+      </button>
+      <button mat-fab extended (click)="openDialog('register')">
+        {{ "financing.buttonJoinUs" | translate }}
+      </button>
+    </div>
+  </div>
+</app-section>

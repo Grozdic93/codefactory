@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <img src="/gifs/writingBoard.gif"
+       alt="gif of a woman using the big touch-screen board with a placeholders and charts">
+  <div class="content">
+    <div>
+      <h4>{{ 'courseDetails.infoSection.title' | translate }}
+    </h4>
+      <h3>{{ courseName }} {{'courseDetails.infoSection.devPart' | translate}}</h3>
+    </div>
+    @for(paragraph of descArray; track $index){
+      <p class="monospace">
+        {{ paragraph }}
+      </p>
+    }
+
+    <app-button (click)="openRegisterDialog()" class="btn">{{ 'courseDetails.infoSection.button' | translate }}</app-button>
+  </div>
+</div>

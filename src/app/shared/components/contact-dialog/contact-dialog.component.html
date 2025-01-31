@@ -1,0 +1,58 @@
+<h2 mat-dialog-title>Contact Us</h2>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <mat-form-field  class="example-full-width" appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input matInput formControlName="firstName" required>
+    <mat-error *ngIf="contactForm.get('firstName')?.hasError('required')">First Name is required</mat-error>
+    <mat-error *ngIf="contactForm.get('firstName')?.hasError('pattern')">{{ 'formDialog.firstName.errorPattern' | translate }}
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field  class="example-full-width" appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput formControlName="lastName" required>
+    <mat-error *ngIf="contactForm.get('lastName')?.hasError('required')">Last Name is required</mat-error>
+    <mat-error *ngIf="contactForm.get('lastName')?.hasError('pattern')">{{ 'formDialog.lastName.errorPattern' | translate }}
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field  class="example-full-width" appearance="fill">
+    <mat-label>E-Mail</mat-label>
+    <input matInput formControlName="email" required>
+    <mat-error *ngIf="contactForm.get('email')?.hasError('required')">E-Mail is required</mat-error>
+    <mat-error *ngIf="contactForm.get('email')?.hasError('email')">Invalid E-Mail</mat-error>
+  </mat-form-field>
+
+  <mat-form-field  class="example-full-width" appearance="fill">
+    <mat-label>Phone Number</mat-label>
+    <input matInput formControlName="phoneNumber" required>
+    <mat-error *ngIf="contactForm.get('phoneNumber')?.hasError('required')">Phone Number is required</mat-error>
+    <mat-error *ngIf="contactForm.get('phoneNumber')?.hasError('pattern')">{{ 'formDialog.phone.errorPattern' | translate }}
+
+    </mat-error>
+  </mat-form-field>
+
+
+  <mat-form-field  class="example-full-width" appearance="fill">
+    <mat-label>Message</mat-label>
+    <textarea required matInput formControlName="message"></textarea>
+    <mat-error *ngIf="contactForm.get('message')?.hasError('required')">Message is required</mat-error>
+
+  </mat-form-field>
+  <mat-checkbox formControlName="callMeBack">Please call me back</mat-checkbox>
+
+
+  <p class="extra-small">This data will not be shared with third parties. By submitting this form, you accept that your message will be sent to CodeFactory's internal mail delivery system for further processing.</p>
+
+  <div mat-dialog-actions>
+    @if(!isLoading){
+      <button mat-button type="button" (click)="dialogRef.close()">Cancel</button>
+      <button  mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid || isLoading">Submit</button>
+    }
+    @if(isLoading){
+      <mat-spinner style="scale: .3"></mat-spinner>
+    }
+  </div>
+</form>
+<div *ngIf="submitSuccess" class="success-message">{{ 'formDialog.message.success' | translate}}</div>
+<div *ngIf="submitError" class="error-message">{{ 'formDialog.message.error' | translate}}</div>

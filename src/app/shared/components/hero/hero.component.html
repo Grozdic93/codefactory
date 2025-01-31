@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="title">
+    <h1>
+      {{ title }}
+    </h1>
+    <ng-content/>
+  </div>
+  <div class="img-wrapper">
+    <img priority fill [ngSrc]="img"
+         alt="illustration of {{ title }}">
+  </div>
+
+</div>

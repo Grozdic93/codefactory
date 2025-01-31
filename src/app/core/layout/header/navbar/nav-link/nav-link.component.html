@@ -1,0 +1,15 @@
+<li class="nav__list-item {{ class }}" [class.dropdown]="isDropdown">
+
+
+  <a *ngIf="!isDropdown" class="link" routerLinkActive="active" [routerLink]="link">
+    <ng-content></ng-content>
+  </a>
+  <div *ngIf="isDropdown" class="dropdown" (click)="toggleDropdown($event)">
+    <a class="link" style="cursor: pointer">
+      <ng-content select="[main-link]"></ng-content>
+    </a>
+    <ul class="dropdown-content" [class.courseClass]="coursesClass" [class.show]="isOpen">
+      <ng-content  select="[dropdown-item]"></ng-content>
+    </ul>
+  </div>
+</li>

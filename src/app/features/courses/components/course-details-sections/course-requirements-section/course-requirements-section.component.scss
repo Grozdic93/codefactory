@@ -1,0 +1,69 @@
+@use '../../../../../../sass/abstracts' as a;
+
+.wrapper {
+  margin-block: 3rem;
+  width: min(calc(100% - 10rem), 90rem);
+  margin-inline: auto;
+
+  @include a.mq('large') {
+    padding-inline: 2rem;
+    width: min(calc(100% - 8rem), 90rem);
+
+  }
+  @include a.mq('medium') {
+    width: 100%;
+    padding-inline: 0;
+    text-align: center;
+
+  }
+
+  .req {
+    margin-block: 4rem;
+
+    p {
+      padding: 1rem;
+    }
+  }
+  .starts{
+    @include a.mq('medium') {
+      text-align: center;
+
+    }
+
+    .dates{
+      display: flex;
+      flex-wrap: wrap;
+      p{
+        margin-inline: auto;
+        text-align: center;
+        width: max-content;
+      }
+    }
+    .datesList{
+      margin-top: 4rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:1rem;
+    list-style: none;
+      @include a.mq('large') {
+        grid-template-columns: repeat(2, 1fr);
+
+      }  @include a.mq('medium') {
+        grid-template-columns: 1fr
+
+      }
+      .monospace{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+      }
+      .fa-circle-dot{
+        font-size: .5rem;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+}

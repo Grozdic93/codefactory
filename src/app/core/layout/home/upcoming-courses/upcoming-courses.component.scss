@@ -1,0 +1,56 @@
+@use '../../../../../sass/abstracts/index' as a;
+
+.wrapper {
+  display: flex;
+  gap: 4rem;
+
+  & > * {
+    flex: 1;
+  }
+
+  .img-wrapper {
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+
+    @include a.mq(medium) {
+      height: 300px;
+      width: 100%;
+      min-height: 300px;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+
+    }
+
+  }
+
+  .courses {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include a.mq(medium) {
+      text-align: center;
+    }
+
+    h6 {
+      padding-bottom: 3rem;
+    }
+
+
+  }
+
+  @include a.mq('large') {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+    & .img {
+      min-height: 400px;
+    }
+  }
+
+}

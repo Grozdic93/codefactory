@@ -1,0 +1,23 @@
+<section>
+  <div class="wrapper">
+    <h6>{{ 'afterCourse.title' | translate }}</h6>
+    <div class="jobs">
+      @for (student of studentProjects; track $index) {
+        <div class="job">
+          <a target="_blank" [href]="student.link">
+            <img fill [ngSrc]="student.image" alt="image if a students project">
+          </a>
+
+        </div>
+      }
+
+      <app-link [link]="'/projects'">{{ 'afterCourse.link' | translate }}</app-link>
+    </div>
+
+    <h3>{{ 'afterCourse.subtitle' | translate }}</h3>
+    <div class="company-logos">
+      <app-logo-scroller/>
+    </div>
+  </div>
+
+</section>

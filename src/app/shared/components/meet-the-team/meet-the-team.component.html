@@ -1,0 +1,18 @@
+<h6>Meet The {{ title }}</h6>
+<div class="team">
+  @for(member of team; track $index){
+  <div class="team-member">
+    <img
+      class="team-member__image"
+      [src]="'./images/team/' + member.img"
+      alt="image of {{ member.fname }} {{ member.lname }}"
+    />
+    <div class="container">
+      <div class="title">
+        {{ member.fname }}
+        <span>{{ member.lname }}</span>
+      </div>
+    </div>
+  </div>
+  }
+</div>

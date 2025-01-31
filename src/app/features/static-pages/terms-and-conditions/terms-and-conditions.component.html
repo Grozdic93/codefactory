@@ -1,0 +1,208 @@
+<app-section>
+  <app-hero
+    [title]="'terms.title' | translate"
+    [img]="'images/illustrations/woman-fingerprint.png'">
+    <p class="monospace"> {{ 'terms.subtitle' | translate }}</p>
+
+  </app-hero>
+
+</app-section>
+<app-section>
+  <div class="content-wrapper">
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p1.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p1.text' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">
+        {{ 'terms.p2.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p2.text1' | translate }}
+        <a href="mailto:office@codefactory.wien" class="link monospace underline">office&commat;codefactory.wien</a>
+        {{ 'terms.p2.text2' | translate }}
+        <a (click)="openContactDialog()" class="monospace underline">( here )</a>
+        {{ 'terms.p2.text3' | translate }}
+        <a (click)="openRegisterDialog()" class="monospace underline">( here )</a>
+        {{ 'terms.p2.text4' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p3.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p3.text1' | translate }}
+        (i.e. <a class="link underline monospace" routerLink="/courses/course-details/4P127IWeMUHmxVpNxLVj">course
+        details</a> )
+        {{ 'terms.p3.text2' | translate }}
+
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p4.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p4.text1' | translate }}
+      </p>
+      <br>
+      <p class="monospace">
+        {{ 'terms.p4.text2' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p5.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p5.text' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p6.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p6.text' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p7.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p7.text1' | translate }}
+      </p>
+      <br>
+      <p class="monospace">
+        {{ 'terms.p7.text2' | translate }}
+      </p>
+      <br>
+      <p class="monospace">
+        {{ 'terms.p7.text3' | translate }}
+      </p>
+      <br><br>
+      <ul class="list">
+        <li class="monospace bold"> {{ 'terms.p7.listItem1' | translate }}
+        </li>
+        <li class="monospace bold"> {{ 'terms.p7.listItem2' | translate }}
+        </li>
+        <li class="monospace bold"> {{ 'terms.p7.listItem3' | translate }}
+        </li>
+      </ul>
+    </div>
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p8.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p8.text' | translate }}
+      </p>
+    </div>
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p9.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p9.text' | translate }}
+      </p>
+    </div>
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p10.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p10.text1' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p10.text2' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p10.text3' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p11.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p11.text' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p12.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p12.text' | translate }}
+      </p>
+
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p13.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p13.text' | translate }}
+      </p>
+
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p14.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p14.text' | translate }}
+      </p>
+
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p15.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p15.text1' | translate }}
+        <a href="mailto:office@codefactory.wien" class="link monospace underline">office&commat;codefactory.wien</a>
+        {{ 'terms.p15.text2' | translate }}
+
+      </p>
+    </div>
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p16.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p16.text' | translate }}
+      </p>
+    </div>
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p17.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p17.text1' | translate }}
+        <a href="mailto:office@codefactory.wien" class="link monospace underline">office&commat;codefactory.wien</a>
+        {{ 'terms.p17.text2' | translate }}
+
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p18.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p18.text' | translate }}
+      </p>
+    </div>
+
+    <div class="column">
+      <p class="monospace bold">{{ 'terms.p19.title' | translate }}
+      </p>
+      <p class="monospace">
+        {{ 'terms.p19.text' | translate }}
+      </p>
+    </div>
+
+  </div>
+</app-section>

@@ -1,0 +1,70 @@
+<app-section>
+  <app-hero
+    [img]="'/images/illustrations/FAQ.png'"
+    [title]="'faq.title' | translate"
+  />
+</app-section>
+<app-section>
+  <mat-accordion>
+
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q1' | translate }} </mat-panel-title>
+<!--        <mat-panel-description>-->
+<!--          Currently I am {{panelOpenState() ? 'open' : 'closed'}}-->
+<!--        </mat-panel-description>-->
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a1' | translate }} <a class="link" href="mailto:office@codefactory.wien">office&#64;codefactory.wien</a></p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q2' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a2' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q3' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a3' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q4' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a4' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q5' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a5' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q6' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a6' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q7' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a7' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q8' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a8' | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{ 'faq.q9' | translate }} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ 'faq.a9' | translate }}</p>
+    </mat-expansion-panel>
+
+
+  </mat-accordion>
+</app-section>

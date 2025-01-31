@@ -1,0 +1,17 @@
+form {
+  padding-inline: 2rem;
+}
+
+.success-message, .error-message {
+  padding: 1rem;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: #c50303;
+}
+
+/*# sourceMappingURL=contact-dialog.component.css.map */

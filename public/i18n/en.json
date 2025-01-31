@@ -1,0 +1,608 @@
+{
+  "landingPage": {
+    "title": "We create developers!",
+    "subtitle": "Start your coding journey now!",
+    "button": "See all courses"
+  },
+  "navbar": {
+    "courses": "courses",
+    "about": {
+      "main": "about",
+      "faq": "FAQ",
+      "payment": "Payment & Financing",
+      "news": "News",
+      "brand": "Become a brand",
+      "team": "Team"
+    },
+    "whyUs": {
+      "main": "why us?",
+      "cf": "Why CodeFactory",
+      "projects": "projects"
+    },
+    "companies": {
+      "main": "companies",
+      "custom": "Custom Courses",
+      "career": "Career_Net",
+      "book": "Book your seminar room"
+    },
+    "joinUs": "join us"
+  },
+  "unlockPotential": {
+    "title": "Unlock Your Potential",
+    "subtitle": "Our intensive coding program equips you with the tools and knowledge needed to thrive in the competitive tech industry.",
+    "quote": {
+      "first": "You need to be strong.",
+      "second": "This course was the foundation",
+      "third": "on which I built",
+      "forth": "my career and expertise."
+    },
+    "author": "Abdulhamid K.",
+    "authorTitle": "Web Developer, Typo3 Person of the Year 2023"
+  },
+  "whyCf": {
+    "titleAccent": "Why",
+    "title": "CodeFactory?",
+    "button": "Read more",
+    "list": {
+      "one": "Practical Learning with Trainers",
+      "two": "Live-Coding Sessions",
+      "three": "Flexible Learning Options",
+      "four": "Comprehensive Project Portfolio",
+      "five": "Financing Options Available",
+      "six": "Welcoming Career Changers",
+      "seven": "Fun & Community",
+      "eight": "Proven Success - over 1000 successful graduates"
+    }
+  },
+  "upcomingCourses": {
+    "title": "Upcoming"
+  },
+  "courseCategories": {
+    "title": "Explore Our Courses",
+    "card1title": "Basic Courses",
+    "card1subtitle": "Discover our 2-day and 5-day courses! Enhance your skill set!",
+    "card2title": "Full-time Courses",
+    "card2subtitle": "Elevate your coding journey! Join us for one of our full-time courses!",
+    "card3title": "Part-time Courses",
+    "card3subtitle": "Embark on a journey of hands-on learning with our immersive EVENING program!"
+  },
+  "financing": {
+    "title": "Financing",
+    "ams": {
+      "titleAmsWaff": "AMS / WAFF",
+      "titleAms": "AMS",
+      "titleWaff": "WAFF",
+      "description": "No matter where you are, we've got you covered."
+    },
+    "partial": {
+      "title": "PARTIAL PAYMENT",
+      "description": "Virtual assistance. Talk to us about any concerns, 24/7."
+    },
+    "erste": {
+      "title": "Erste Bank",
+      "description": "Full Stack course financing available, repayment starts post-completion."
+    },
+    "employer": {
+      "title": "EMPLOYER",
+      "description": "Easy peasy UI. Our interface is simple and easy to use."
+    },
+    "buttonGetEstimate": "Get your cost estimate now!",
+    "buttonJoinUs": "Join our course now!"
+  },
+  "afterCourse": {
+    "title": "See what can be achieved after the course:",
+    "link": "See more",
+    "subtitle": "Where do our graduates work?"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "text": "Founded in 2016, CodeFactory follows the concept of programming boot camps of Anglo-American countries. Our goal is to provide time-efficient and very practice-oriented training with the aim of the fastest possible career entry as a junior developer. Our courses are tailored to newcomers, people who want to change careers in the second or third educational path as well as people who are interested in an application-oriented education.",
+    "subtitle": "Our Goals:",
+    "sprite1": "HANDS-ON LEARNING FROM DAY ONE",
+    "sprite2": "TIME-EFFICIENT CAREER ENTRY",
+    "sprite3": "EXPERIENCE IN REAL CUSTOMER PROJECTS"
+  },
+  "formDialog": {
+    "titleOfRadio1": "Request Estimate",
+    "titleOfRadio2": "Register",
+    "costNote": "Registrations made for non-serious purposes will incur a charge.\n",
+    "title1": "Request Cost Estimate",
+    "title2": "Register To Course",
+    "title": {
+      "title": "Title",
+      "option1": "Mr",
+      "option2": "Mrs",
+      "option3": "Other",
+      "error": "Title is required"
+    },
+    "firstName": {
+      "title": "First Name",
+      "error": "First Name is required",
+      "errorPattern":"First Name must contain only letters"
+    },
+    "lastName": {
+      "title": "Last Name",
+      "error": "Last Name is required",
+      "errorPattern":"Last Name must contain only letters"
+    },
+    "email": {
+      "title": "Email",
+      "error": "Email is required",
+      "invalid": "Invalid Email Address"
+    },
+    "svn": {
+      "title": "Insurance Number (SV)",
+      "error": "Insurance Number is required",
+      "length": "Insurance Number must be exactly 10 digits"
+    },
+    "phone": {
+      "title": "Phone Number",
+      "error": "Phone Number is required",
+      "errorPattern": "invalid Phone Number"
+    },
+    "selectCourse": {
+      "title": "Select Course",
+      "date": "Select Date"
+    },
+    "to": {
+      "ams": "AMS",
+      "waff": "WAFF",
+      "private": "Private",
+      "other": "Other",
+      "estimateOther": "Other",
+      "error": "One option must be selected"
+    },
+    "file": {
+      "label": "No file uploaded yet.",
+      "error": "File is not uploaded"
+    },
+    "description": {
+      "title": "Description",
+      "error": "Description is required"
+    },
+    "message": {
+      "success": "Form submitted successfully!",
+      "error": "Error submitting the form. Please try again."
+    },
+    "voucher": {
+      "label": "Voucher Code (optional)"
+    }
+  },
+  "footer": {
+    "title": "Learn, Code, Succeed!",
+    "subtitle": "Join our coding bootcamp and embark on a transformative journey towards a rewarding career in technology.",
+    "buttons": {
+      "title": "Interested?",
+      "join": "Join Us",
+      "contact": "Contact Us"
+    },
+    "socials": {
+      "title": "Follow Us:",
+      "text": "social"
+    },
+    "email": "Email",
+    "address": "Address",
+    "city": "Vienna",
+    "links": {
+      "link1": "Contact",
+      "link2": "Mission Statement",
+      "link3": "Imprint",
+      "link4": "Terms and Conditions"
+    },
+    "copy": "Made in Vienna"
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "subtitle": "Of CodeFactory GmbH",
+    "p1": {
+      "title": "1.Scope of application",
+      "text": "These General Terms and Conditions of Business (hereinafter referred to as “GTC”) shall apply to all participants (hereinafter referred to as “Course Participants”) in courses offered by CodeFactory GmbH (hereinafter referred to as “CodeFactory”), unless otherwise agreed in individual cases in the context of ongoing cooperation."
+    },
+    "p2": {
+      "title": "2. Enrollment",
+      "text1": "CodeFactory accepts registrations for courses by email to ",
+      "text2": "by the contact form on their website ",
+      "text3": "or by using the online registration forms for each course on their website ",
+      "text4": "Each registration is binding. Participation by a person other than the registered course participant is only possible with the express written consent of CodeFactory."
+    },
+    "p3": {
+      "title": "3. Conditions of participation",
+      "text1": "CodeFactory is entitled to link course participation to the fulfillment of specified qualifications. The prerequisites for participation will be announced in the relevant course description of each course on the CodeFactory website",
+      "text2": "It is the responsibility of the course participant to assess whether they meet the participation requirements. "
+    },
+    "p4": {
+      "title": "4. Course fee",
+      "text1": "The course fee is due immediately after confirmation of registration. For participants funded by third parties (I.e. employer, labor market service, WAFF etc.), confirmation of intent to pay the course fee by the third party may be required to complete the course registration. In this case, the terms and conditions of CodeFactory apply for the externally funding party instead.",
+      "text2": "If the participant pays the course fee themselves, the payment must be made before the start of the course (either in full or, where applicable, in mutually agreed installments). Installment agreements need to be signed by both parties to be in effect for more information, see"
+    },
+    "p5": {
+      "title": "5. Course contents",
+      "text": "CodeFactory has the right to change or remove course contents at any time both for ongoing and past courses."
+    },
+    "p6": {
+      "title": "6. Course completion",
+      "text": "Some course formats have an immanent examination character or conclude with a certification exam. Certification criteria will be communicated at the beginning of a course and will be accessible via the online learning management system. CodeFactory reserves the right to refrain from awarding certificates or confirmations of participation as determined by the trainers or management. There is no legal claim to a certificate or confirmation of participation."
+    },
+    "p7": {
+      "title": "7. Right of withdrawal",
+      "text1": "With the confirmation of registration for a course, payment of the course fee is mandatory. Unless otherwise agreed, a payment deadline of one week applies.",
+      "text2": "For courses lasting less than two weeks, there is no possibility of withdrawal.",
+      "text3": "Cancellations of booked events can only be accepted in writing (including by email) or in person. The cancellation becomes effective on the day it is received by CodeFactory. The following cancellation conditions generally apply:",
+      "listItem1": "Cancellations up to the 15th calendar day before the start of the event: free of charge",
+      "listItem2": "Cancellations from the 14th calendar day before the start of the event: 50% of the event fee ",
+      "listItem3": "Cancellations on the day of the event or thereafter: 100% of the event fee (this also applies in the case of agreed partial payments)"
+    },
+    "p8": {
+      "title": "8. Non-participation after registration (no-show)",
+      "text": "In case of a course purchase, even if the participant has not participated in the course or did not participate in further communication, CodeFactory reserves the right to collect the course fee in full"
+    },
+    "p9": {
+      "title": "9. Exclusion from further participation",
+      "text": "CodeFactory can refuse or exclude students from further participation in the course if necessary for reasons related to the person of the student. This includes, but is not limited to, personal misconduct of any kind, a lack of language or technical skills and failure to meet the required minimum requirements. "
+    },
+    "p10": {
+      "title": "10. Postponement and cancellation of courses",
+      "text1": "In cases of personnel sickness or other unavoidable higher circumstances, CodeFactory may reschedule or cancel issued course dates. In this case, CodeFactory will immediately notify the registered course participants in writing to the e-mail address provided and offer to reschedule to later course dates (where applicable) at no additional fee.",
+      "text2": "In case of postponement or cancellation, participants may also withdraw from the course and have their course fee refunded in its entirety.",
+      "text3": "CodeFactory shall not be liable for any other costs (such as travel, accommodation or hotel costs) incurred due to postponement or cancellation."
+    },
+    "p11": {
+      "title": "11. Course materials",
+      "text": "CodeFactory provides each course participant with individual and/or general login data for online course materials. These materials may not be downloaded, shared or otherwise proliferated. Each course participant shall treat the login data given to him/her confidentially and keep them safe. In case of misuse or unauthorized disclosure, CodeFactory may block the account of the affected course participant. The course participant is liable for any damage caused to CodeFactory by the misuse or unauthorized disclosure to third parties."
+    },
+    "p12": {
+      "title": "12. Webspace",
+      "text": "CodeFactory may offer course participants the possibility to use a web hosting service in relation to their training and course participation. If the content of a course participant’s web space is in violation of Code Factory’s usage guidelines, illegal or immoral, CodeFactory is entitled to remove the web space account of the affected course participant without prior warning."
+    },
+    "p13": {
+      "title": "13. Intellectual property",
+      "text": "Course participants acknowledge that all property rights and copyrights to documents and information provided by CodeFactory remain with CodeFactory and that any use beyond the purposes of the course is prohibited. In particular, course participants may not use, reproduce or distribute course lectures, exams, the curriculum and other course materials provided by CodeFactory without express written permission. In addition, course participants may only make image, video and sound recordings of course lectures, exams, the curriculum and other course documents of CodeFactory with express written consent."
+    },
+    "p14": {
+      "title": "14. Rights to created or created works",
+      "text": "For works created or created within the framework of a course, in particular programs, which are capable of being protected by intellectual property rights according to the provisions of intellectual property law, it is agreed that these rights are granted exclusively and comprehensively to CodeFactory. Thus, all rights (especially rights of use) to these works are exclusively granted to CodeFactory. However, the course participant has the right to be named as the author of a work created or created within the scope of a course and to name his authorship to third parties. "
+    },
+    "p15": {
+      "title": "15. Image rights",
+      "text1": "The course participant expressly agrees to the use and publication (especially for advertising purposes) of photos, videos and other materials that CodeFactory takes from course participants. This consent can be revoked at any time in writing by e-mail to ",
+      "text2": "without giving reasons. Any photos, videos and other materials that have already been used and published remain unaffected by the revocation."
+    },
+    "p16": {
+      "title": "16. Disclaimer of liability",
+      "text": "CodeFactory’s liability towards the course participants in connection with the obligations arising from the contractual relationship with the course participants – with the exception of personal injury – is limited to intent and gross negligence. This applies in particular to the completeness and correctness of the documents and information provided by CodeFactory, to the achievement of the learning objectives and the positive completion of the course. Under no circumstances does CodeFactory guarantee that course participants will find relevant work after completion of the course."
+    },
+    "p17": {
+      "title": "17. Data processing and transmission ",
+      "text1": "The course participant expressly agrees that their personal data, namely name, date of birth, address and e-mail address, will be processed for the purpose of creating and sending electronic newsletters, advertising brochures and information on career opportunities. The course participant can revoke this consent at any time in writing by e-mail to ",
+      "text2": "without giving reasons. According to the GDPR, course participants have the right to rectification, deletion and access to their data kept by CodeFactory."
+    },
+    "p18": {
+      "title": "18. Changes of the general terms and conditions",
+      "text": "CodeFactory reserves the right to make changes to these terms and conditions at any time and without notice. It is the participants’ responsibility to be aware of current terms and conditions."
+    },
+    "p19": {
+      "title": "19. Final provision",
+      "text": "If any provision of these Terms and Conditions is invalid or unenforceable, the invalid or unenforceable provision shall be deemed replaced by that valid and enforceable provision which most closely approximates the purpose of the original provision. The remaining part of the GTC remains unaffected and effective."
+    }
+  },
+  "paymentAndFinancing": {
+    "title": "Payment & Financing",
+    "subtitle": "Discover our flexible payment options below!",
+    "ams/waff": {
+      "title": "AMS/WAFF funding",
+      "ams": {
+        "title": "AMS Financing:",
+        "text": "Secure full funding for CodeFactory courses through AMS (Arbeitsmarktservice) approval. Prepare a cost estimate, course description, and confirmation of course duration to apply."
+      },
+      "waff": {
+        "title": "WAFF Funding:",
+        "text": "Depending on the program, WAFF (Wiener ArbeitnehmerInnen Förderungsfonds) provides partial funding for CodeFactory courses. Obtain a cost estimate, course description, and confirmation of course duration to qualify."
+      }
+    },
+    "partial": {
+      "title": "Partial payment in monthly installments",
+      "p1": "Courses priced over 2000 € can be paid through manageable monthly installments. The initial payment is due before the course begins, followed by subsequent payments.",
+      "p2": "For shorter courses like Fullstack Web Developer (up to 4 months), installment plans can match the course duration.",
+      "p3": "For longer courses, a guarantor may be required if more installments are needed, with a maximum of twice the course length."
+    },
+    "erste": {
+      "title": "Financing through Erste Bank",
+      "p1": "Our Full Stack course can now be financed through Erste Bank, with easy access to credit. You only have to live in Austria. Payment starts a few months after you finish the course, giving you time to find an awesome job, with monthly repayments of less than €100. You can also pay it off earlier if you wish.",
+      "p2": "For more information about Erste Bank financing, contact us at office@codefactory.wien. We look forward to welcoming you and guiding you on your journey to becoming a sought-after IT professional!"
+    },
+    "employer": {
+      "title": "Financing through the employer",
+      "p1": "Many companies are looking for developers.",
+      "p2": "Ask your current or future employer if it is possible to finance this training.",
+      "p3": "We are happy to inform and assist you!"
+    }
+  },
+  "seminarRoom": {
+    "title": "Book your seminar room",
+    "subtitle": "The perfect spaces for seminars, training and courses. Also suitable as a meeting room, or as a therapy and treatment room.",
+    "button": "Contact us",
+    "welcomeTextTitle": "Whether for a customer meeting, business meeting, seminar, conference, lecture, workshop or reading, you have at your disposal:",
+    "li1": "2 different room sizes",
+    "li2": "WLAN, beamer, flipcharts free of charge",
+    "li3": "air conditioning available",
+    "li4": "optimal traffic connection",
+    "li5": "bookable starting from 4 hours / appointment",
+    "li6": "starting from 20 Euro / hour",
+    "largeRoom": {
+      "title": "Seminar room – large (with terrace)",
+      "subtitle": "The room can accommodate up to 40 people."
+    },
+    "smallRoom": {
+      "title": "Seminar room – small (with terrace)",
+      "subtitle": "The room can accommodate up to 20 people."
+    },
+    "other": {
+      "title": "Other premises"
+    },
+    "prices": {
+      "title": "Price List",
+      "hour": "per hour",
+      "day": "per day",
+      "weekend": "on weekend/day",
+      "small": "Room small",
+      "big": "Room big",
+      "both": "Both rooms",
+      "net": "All prices are net prices.",
+      "info": "The minimum booking time is 4 hours per appointment. You can get a discount of 10% if you reserve 10+ dates!",
+      "button": "Book your room now"
+    }
+  },
+  "customCourses": {
+    "title": "Custom Courses",
+    "subtitle": "Unlock Your Team’s Potential with Customized Programming Trainings - train your employees directly with us!",
+    "benefits": {
+      "title": "Your benefits",
+      "sprite1": "Choose your curriculum",
+      "sprite2": "Choose your training level",
+      "sprite3": "Possible assessment center"
+    },
+    "hire": {
+      "title": "Looking to Expand Your Team?",
+      "text": "In addition to our training programs, you can also tap into our pool of talented programming graduates. Whether you need an intern or a full-time employee, we can connect you with skilled professionals ready to contribute to your success.",
+      "text2":"Transform your team’s programming capabilities with CodeFactory. Contact us today to learn more about our customized training solutions and how we can help you find the perfect talent for your company.",
+      "button": "Send your inquiry now"
+    },
+    "info": {
+      "title": "Why Choose CodeFactory for Your Employee Programming Training?",
+      "column1": {
+        "title": "Customizable Curriculum:",
+        "subtitle": "hoose a curriculum that aligns perfectly with your business objectives and technical requirements. Whether you need advanced coding techniques or foundational programming skills, we have a range of options to suit your needs."
+      },
+      "column2": {
+        "title": "Flexible Training Levels: ",
+        "subtitle": "Our training programs are designed to cater to all skill levels, from beginners to advanced developers. You can select the level that best matches the expertise of your employees to ensure they gain the most relevant and useful skills."
+      },
+      "column3": {
+        "title": "Assessment Center:",
+        "subtitle": "Evaluate the progress and effectiveness of the training with our comprehensive assessment center. This allows you to measure skill acquisition and ensure your team is meeting your company’s programming standards."
+      }
+    },
+    "studentProjects": {
+      "title": "See some of our students projects:",
+      "question": "Any questions?",
+      "button": "Contact Us"
+    }
+  },
+  "courseDetails": {
+    "start": "Next Start:",
+    "btnRegister": "Register Now",
+    "btnCost": "Get cost estimate",
+    "info": "*We are exempt from sales tax in accordance with Paragraph § 6 Para. 1 Z 11 lit a UStG.",
+    "infoSection": {
+      "title": "Looking to become a",
+      "devPart": "developer?",
+      "text": "Look no further than our 16-week immersive program! Whether you prefer to learn online or onsite, we've got you covered with expert instruction in all aspects of programming and web development. You'll graduate with the skills and knowledge to build dynamic, user-friendly websites and web applications from start to finish. Don't wait to start your career in this exciting field - enroll now in our full stack web developer program.",
+      "button": "Enroll now"
+    },
+    "keyFacts": {
+      "title": "Key Facts",
+      "duration": "Duration:",
+      "language": "Language:",
+      "location": "Location:",
+      "times": "Times:",
+      "fee": "Fee:",
+      "level": "Level:",
+      "info": "*We are exempt from sales tax in accordance with Paragraph § 6 Para. 1 Z 11 lit a UStG.      Please see in addition our payment & financing options.",
+      "infoSmall": "Please see in addition our",
+      "link": "payment & financing options"
+    },
+    "tech": {
+      "title": "Technologies"
+    },
+    "req": {
+      "title": "Requirements",
+      "starts": "Next Starts:"
+    }
+  },
+  "team": {
+    "title": "Meet the Team",
+    "ceo": "CEO’s",
+    "trainers": "Trainers",
+    "marketing": "Office Management & Marketing"
+  },
+  "why": {
+    "title": "Why CodeFactory?",
+    "subtitle": "Choosing CodeFactory means choosing a future where you are equipped with the skills, experience, and connections needed to thrive in the tech industry. Join us and become part of a community dedicated to your success.",
+    "benefits": {
+      "title": "Your benefits",
+      "b1": "Coding from Day 1",
+      "b2": "Practical learning of In-Demand skills",
+      "b3": "Impressive work portfolio",
+      "b4": "Thriving community",
+      "b5": "Flexible learning options",
+      "b6": "Various financing options",
+      "b7": "Connection to companies"
+    },
+    "topChoice": {
+      "title": "Here's why CodeFactory should be your top choice:",
+      "p1Title": "1. Practical Learning of In-Demand Skills",
+      "p1Text": "Our curriculum is designed to ensure you gain hands-on experience with the latest programming technologies. You'll be writing code from day one, mastering the skills that employers are actively seeking.",
+      "p2Title": "2. Build Impressive Work Portfolios",
+      "p2Text": "Throughout the course, you'll work on real-world projects that showcase your abilities. By the end of your journey with us, you'll have an impressive portfolio that highlights your expertise and readiness for the job market.",
+      "p3Title": "3. Join a Thriving Community",
+      "p3Text": "When you join CodeFactory, you become part of a vibrant community of over 1,200 career-ready IT specialists trained by 2024. Our alumni network is a valuable resource, offering support, mentorship, and job opportunities.",
+      "p4Title": "8. Ideal for All Learners",
+      "p4Text": "Whether you're a beginner exploring programming for the first time, a professional looking to upskill, or someone seeking a career change, CodeFactory provides a learning environment that caters to all stages of your professional journey.",
+      "p5Title": "5. Flexible Learning Options",
+      "p5Text": "We understand that everyone's schedule is different. That's why we offer both full-time and evening courses, allowing you to learn at your own pace and fit your education into your busy life.",
+      "p6Title": "6. Many Financing Options Available ",
+      "p6Text": "We believe that financial constraints should never be a barrier to education. That's why we offer various financing options to ensure everyone has the opportunity to pursue their passion for programming.",
+      "p7Title": "7. Live-Coding Sessions",
+      "p7Text": "Experience the thrill of live-coding sessions where you'll solve problems in real-time with the guidance of experienced instructors. These interactive sessions ensure you gain practical, hands-on experience.",
+      "p8Title": "8. Inspiring Lunchspeakers",
+      "p8Text": "Gain insights and inspiration from industry leaders through our regular lunchspeakers series. These sessions provide a unique opportunity to learn from the best and stay updated on the latest industry trends.",
+      "p9Title": "9. Practice for Successful Job Applications",
+      "p9Text": "We don't just teach you how to code; we prepare you for every aspect of the job application process with a dedicated module, ensuring you excel in crafting resumes, acing interviews, and navigating the job market.",
+      "p10Title": "10. Connect to a Network of Employers ",
+      "p10Text": "Our extensive industry connections provide you with access to a broad network of employers eager to hire talented graduates. Whether it's large corporations or innovative startups, we help you connect with companies looking for your skills."
+    },
+    "statistics": {
+      "title": "Impressive Employment Statistics",
+      "text1": "More than 80% of our graduates are employed in the IT sector within 2 months of completing their training.",
+      "text2": "CodeFactory's courses offer a recognized and barrier-free professional qualification, especially benefiting newcomers, career changers, women, and people with a migration background.",
+      "text3": "At CodeFactory, we are committed to your success. Join us and take the first step towards a fulfilling and lucrative career in programming. Your future in tech starts here!",
+      "button": "Send your inquiry now"
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "info": "Information obligation according to §5 E-Commerce Act, §14 Company Code, §63 Trade Regulations and disclosure obligation according to §25 Media Act.",
+    "company": "CodeFactory GmbH",
+    "ceo": "represented by",
+    "city": "Vienna",
+    "country": "Austria",
+    "phone": "Phone:",
+    "member": "Member of: WKO",
+    "law": "Professional law: Trade regulations:",
+    "supervisor": "Supervisory authority/trade authority: Mag. of the city of VIENNA"
+  },
+  "faq": {
+    "title": "Frequently asked questions (FAQ)",
+    "q1": "Can non-EU citizens enroll in CodeFactory courses?",
+    "a1": "Yes, non-EU citizens are welcome! If you have more questions, don’t hesitate to contact us at",
+    "q2": "What do industry experts say about your course format?",
+    "a2": "CodeFactory is recognized in the business world as a top training center. Graduates are employed as programmers locally and internationally, making us a preferred choice for practical education. ",
+    "q3": "Do you collaborate with companies? ",
+    "a3": "Yes, we partner with multinational corporations and small enterprises to provide input and seek our junior developer graduates.",
+    "q4": "Is it possible to become a programmer in 4 months?",
+    "a4": "Yes, our intensive course prepares graduates to start as junior developers in both front-end and back-end roles.",
+    "q5": "What programming languages are taught in your Full-stack Web Developer course? ",
+    "a5": "Our curriculum covers HTML5, CSS3, JavaScript (including Angular framework), PHP, Symfony, SQL, and more to meet European market demands.",
+    "q6": "What other courses do you offer?",
+    "a6": "Explore our comprehensive course catalog for more details.",
+    "q7": "What job positions can I apply for after completing your Full-stack Web Developer course?",
+    "a7": "Graduates are equipped for junior developer roles in front-end and back-end development.",
+    "q8": "What if I cannot afford the course?",
+    "a8": "We offer flexible payment options and can assist with funding opportunities through AMS.",
+    "q9": "What are the prerequisites for course registration?",
+    "a9": "Basic English skills (B1 level) and familiarity with HTML/CSS and JavaScript are required, which can be gained through our preparatory courses or self-study."
+  },
+  "brandAmbassador": {
+    "title": "Brand Ambassador",
+    "question": "Who wants to become brand ambassador? ",
+    "text": "We are looking for energetic brand ambassadors around the globe! You have a big network? Marketing and Sales is your strength? The task of our brand ambassadors is to promote CodeFactory in their country and their community and to win participants for various courses at the CodeFactory locations. Per sold course package 10% of the course price go directly to the ambassador as a commission, i.e. up to 400 euros per acquired Fullstack course participant!"
+  },
+  "careerNet": {
+    "title": "Career_Net",
+    "subtitle": "Elevate Your Tech Talent with CodeFactory",
+    "sprites": {
+      "title": "At CodeFactory, we’re not just about training individual developers —we’re dedicated to fostering valuable B2B partnerships and providing comprehensive training solutions for companies like yours.",
+      "s1": "Unlock Top Tech Talent",
+      "s2": "What Sets Us Apart",
+      "s3": "How We Connect You with Talent"
+    },
+    "apart": {
+      "title": "What Sets Us Apart",
+      "b1": "Hands-On Experience:",
+      "p1": "Our courses emphasize independent learning and practical experience through real-life projects.",
+      "b2": "Essential Soft Skills:",
+      "p2": "We don’t just teach coding; we equip our students with crucial soft skills such as team programming, client communication, and effective presentation."
+
+    },
+    "talent": {
+      "title": "Unlock Top Tech Talent",
+      "p1": "Is your company on the hunt for skilled developers?",
+      "p2": "Look no further. Whether you need interns or full-time hires, CodeFactory is here to help.",
+      "p3": "Our training programs produce highly capable programmers ready to tackle real-world challenges."
+    },
+    "connect": {
+      "title": "How We Connect You with Talent",
+      "b1": "Job Offer Presentations:",
+      "p1": "Showcase your job openings to our participants and alumni.",
+      "b2": "Tailored Candidate Selection:",
+      "p2": "We can match your job requirements with our graduates and facilitate introductions."
+    },
+    "promote": {
+      "title": "Promote Your Company",
+      "b1": "Lunch Speaker Invitation:",
+      "p1": "Present at one of our CodeFactory courses to highlight your company’s expertise and connect with future talent. This opportunity is complimentary.",
+      "b2": "CareerDay Participation:",
+      "p2": "Attend our CareerDay, where students present their projects and skills. This event offers a platform to discover and engage with top candidates. Standard service fees apply for recruitment."
+    },
+    "training": {
+      "title": "Explore Our Training Program",
+      "p1": "In addition to connecting you with talented graduates, we offer customized training programs for your employees.",
+      "p2": "Learn more about how we can support your team’s growth",
+      "p3": "For more information or to join our Career_Net, contact us at",
+      "button": "Send your inquiry now"
+    }
+  },
+  "mission": {
+    "title": "Mission Statement",
+    "preamble": {
+      "title": "Preamble",
+      "text": "Learning is crucial for addressing various life challenges such as digitalization, the shift to a knowledge-based society, and issues faced by older individuals and people with migration background. Effective training and education are central to creating a sustainable future. Individuals shape their own paths but need strong foundations to fulfill their potential and lead satisfying lives. Our digital education services are designed to meet these needs, providing comprehensive and personalized learning experiences. This approach includes not only courses but also guidance in effectively communicating new skills in the job market, ensuring the success of educational initiatives."
+    },
+    "background": {
+      "title": "Background of CodeFactory GmbH",
+      "text": "Founded in 2016, CodeFactory Vienna adopts the programming bootcamp model from the Anglo-American world, offering practical, time-efficient training aimed at quickly launching careers as junior developers. We cater to career changers, those on their second or third career path, and those seeking application-focused education. Partnering with numerous educational counseling centers, we provide cutting-edge IT training to people outside traditional educational paths. We emphasize holistic training, on-the-job skills, and industry networking even during training."
+    },
+    "tasks": {
+      "title": "Our Tasks",
+      "text": "CodeFactory offers a variety of IT training and further education courses, especially in programming and software testing, in both on-site and online formats. We combine technical training with soft skills development and provide additional events and services to support our clients."
+    },
+    "additional": {
+      "title": "Additional Offerings",
+      "b1": "Lunch Speakers:",
+      "p1": "Industry experts share insights on job opportunities and tech trends in a relaxed setting.",
+      "b2": "Excursions:",
+      "p2": "Visits to companies.",
+      "b3": "Practical Projects:",
+      "p3": "Real customer projects that teach project management and documentation.",
+      "b4": "Large Portfolio:",
+      "p4": "Students build a comprehensive portfolio from week one to aid in job searches.",
+      "b5": "Career Support:",
+      "p5": "Assistance with job interviews, application documents, and portfolio preparation.",
+      "b6": "Social Activities:",
+      "p6": "Networking events and opportunities to make new friends."
+    },
+    "target": {
+      "title": "Target Audience",
+      "p1": "We aim to serve:",
+      "p2": "IT career changers.",
+      "p3": "Individuals updating or expanding outdated IT knowledge.",
+      "p4": "Those without vocational qualifications or with non-recognized educational backgrounds.",
+      "p5": "People seeking new careers due to language, social, or other barriers.",
+      "p6": "Companies looking to train new or existing employees.",
+      "p7": "Educational consulting institutions and funding agencies seeking to inform clients about IT education opportunities."
+    },
+    "principles": {
+      "title": "Guiding Principles and Values",
+      "text": "We believe digital competence and education are key to personal fulfillment and empowerment. Our comprehensive learning concept fosters self-directed learning across various contexts and locations. We emphasize quality, applicability, and sustainability, focusing on practical industry problems and evolving technology. Our work is guided by competence, relevance, and alignment with international standards and market demands."
+    },
+    "culture": {
+      "title": "Corporate Culture",
+      "text": "CodeFactory is a joyful place for digital education and lifelong learning, promoting professional networking and intercultural friendships. Our communicative and independent team is customer-focused and adheres to high quality standards. As a dynamic company, we respond flexibly to challenges. CodeFactory is recognized for its competence and reliability by employees, employers, educational institutions, clients, and partners."
+    }
+  },
+  "projects": {
+    "title": "Students Projects"
+  }
+}
+
+

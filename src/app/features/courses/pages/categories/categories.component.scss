@@ -1,0 +1,14 @@
+@use '../../../../../sass/abstracts/index' as a;
+
+.wrapper {
+  margin-block: 300px;
+  @include a.mq(medium){
+    margin-block: 100px;
+  }
+
+}
+.center{
+  text-align: center;
+  align-items: center;
+  margin-inline:auto;
+}

@@ -1,0 +1,14 @@
+@use '../../../../sass/abstracts' as a;
+button{
+  cursor: pointer;
+  transition: color 500ms, background-color 500ms;
+  background-color: a.clr(bg, dark);
+  color: a.clr(text, light);
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-size: .9rem;
+
+}

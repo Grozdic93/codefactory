@@ -1,0 +1,88 @@
+@use '../../../../../sass/abstracts' as a;
+
+.wrapper {
+  min-height: 300px;
+
+  .content {
+    display: flex;
+    height: 100%;
+    gap: 4rem;
+    align-items: center;
+
+    .title {
+      margin-block: 2rem;
+    }
+
+    .imgTitle {
+      text-align: center;
+    }
+
+    .text {
+      width: 70%;
+      @include a.mq(large) {
+        width: 100%;
+      }
+      @include a.mq(medium) {
+        width: 100%;
+      }
+
+      &.order {
+        order: -1;
+      }
+    }
+
+    .img-text-wrapper {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      @include a.mq(medium) {
+        width: 100%;
+
+      }
+    }
+
+    .img-wrapper {
+      width: 100%;
+      max-width: 250px;
+      position: relative;
+      min-height: 300px;
+      @include a.mq(large) {
+        height: 400px;
+        width: 100%;
+        min-height: 300px;
+      }
+      @include a.mq(medium) {
+        height: 300px;
+        width: 100%;
+        min-height: 300px;
+      }
+
+      img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+
+      }
+
+    }
+
+    @include a.mq(large) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .buttons {
+    margin-block: 3rem;
+    @include a.mq(large) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+

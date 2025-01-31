@@ -1,0 +1,56 @@
+@use '../../../../../sass/abstracts' as a;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+
+
+}
+
+.split {
+  height: 50lvh;
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+
+  & > * {
+    flex: 1;
+  }
+  @include a.mq('large') {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+align-self: center;
+  &__quote {
+    padding-bottom: 2rem
+  }
+
+  @include a.mq('large') {
+    width: 100%;
+  }
+
+}
+
+.img {
+    background-image: url('/images/cf-laptop.png');
+    background-size: contain;
+    background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+
+  @include a.mq('large') {
+    min-height: 400px;
+  }
+}
+
+

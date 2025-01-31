@@ -1,0 +1,18 @@
+@use '../../../../sass/abstracts' as a;
+article{
+  width: 80%;
+  margin-inline: auto;
+  @include a.mq(medium){
+    width: 100%;
+  }
+  .title{
+    margin-bottom: 2rem;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  .indent{
+    width: 90%;
+    margin-left: auto;
+  }
+}

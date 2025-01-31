@@ -1,0 +1,22 @@
+<section>
+  <div class="wrapper">
+    <h4>{{ 'customCourses.studentProjects.title' | translate }}</h4>
+    <div class="jobs">
+      @for(student of students; track $index) {
+        <div class="job">
+          <a target="_blank" [href]="student.link">
+            <img fill [ngSrc]="student.image" alt="image if a students project">
+          </a>
+        </div>
+      }
+
+      <app-link [link]="'/projects'">{{ 'afterCourse.link' | translate }}</app-link>
+    </div>
+
+    <div class="flex">
+      <h3>{{ 'customCourses.studentProjects.question' | translate }}</h3>
+      <button (click)="openDialog()" class="btn outline">{{ 'customCourses.studentProjects.button' | translate }}</button>
+    </div>
+  </div>
+
+</section>

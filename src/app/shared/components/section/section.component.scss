@@ -1,0 +1,24 @@
+@use '../../../../sass/abstracts/index' as a;
+
+section {
+  min-height: 100lvh;
+  padding-inline: 4rem;
+  overflow-x: clip;
+  overflow-y:visible;
+  display: grid;
+  align-items: center;
+
+  @include a.mq('large') {
+    padding-inline: 3rem;
+    //width: calc(100% - 4rem);
+    padding-block: 2rem;
+    min-height: 900px;
+  }
+  @include a.mq('medium') {
+    //width: calc(100% - 2rem);
+    justify-content: center;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    min-height: 500px;
+  }
+}

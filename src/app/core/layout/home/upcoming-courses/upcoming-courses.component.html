@@ -1,0 +1,25 @@
+
+  <div class="wrapper">
+    <div class="img-wrapper">
+      @if(!image){
+      <img priority fill ngSrc="/images/cf-students.png" alt="">
+      }@else{
+        <img priority fill [ngSrc]="image" alt="">
+      }
+    </div>
+    <div class="courses">
+      @if(!categoryName){
+        <h6 class="h1">{{ 'upcomingCourses.title'  | translate}}</h6>
+      } @else {
+        <h6 class="h1">{{ categoryName }} courses</h6>
+      }
+      @for(course of courses; track course.id){
+        <a [routerLink]="['/courses','course-details', course.id]">
+          <app-upcoming-course [courseName]="course | translateObject:'name': 'nameDe'"
+                               [courseStartDate]="course.dates[0].startDate"/>
+        </a>
+      }
+
+    </div>
+  </div>
+

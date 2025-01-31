@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div class="content">
+    <div class="img-text-wrapper">
+      @if(imgTitle){
+      <h3 class="title">{{ imgTitle }}</h3>
+      }
+      <div class="img-wrapper">
+        <img
+          priority
+          fill
+          [ngSrc]="image"
+          alt="illustration of a persons sitting together and exchanging ideas"
+        />
+      </div>
+    </div>
+
+    <div class="text" [class.order]="textLeft">
+      @if(title){
+      <h3 class="title">{{ title }}</h3>
+      }
+      <ng-content select="[text]"></ng-content>
+    </div>
+  </div>
+  <div class="buttons">
+    <ng-content select="[buttons]"></ng-content>
+  </div>
+</div>

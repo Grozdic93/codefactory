@@ -1,0 +1,14 @@
+.wrapper{
+  min-height: 100lvh;
+}
+.center{
+  &.not-found{
+    height: 80lvh;
+  }
+  &.error{
+    color:red;
+  }
+
+  text-align: center;
+  align-content: center;
+}

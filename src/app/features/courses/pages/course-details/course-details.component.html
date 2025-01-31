@@ -1,0 +1,63 @@
+<div class="wrapper">
+  <ng-container *ngIf="isLoading; else content">
+    <h6 class="center loading">Loading...</h6>
+  </ng-container>
+
+  <ng-template #content>
+    <ng-container *ngIf="course; else notFound">
+      <app-section>
+        <ng-container *ngIf="getClosestDate(); else noDate">
+          <app-title-section
+            [thumb]="course.thumbnail"
+            [courseName]="course | translateObject:'name':'nameDe'"
+            [startDate]="getClosestDate().startDate"
+            [price]="course.price"
+          ></app-title-section>
+        </ng-container>
+        <ng-template #noDate>
+          <app-title-section
+            [thumb]="course.thumbnail"
+            [courseName]="course | translateObject:'name':'nameDe'"
+            [startDate]="'No upcoming dates available'"
+            [price]="course.price"
+          ></app-title-section>
+        </ng-template>
+      </app-section>
+
+      <app-section>
+        <app-course-details-info-section
+          [description]="course | translateObject:'description':'descriptionDe'"
+          [courseName]="course | translateObject:'name':'nameDe'"
+        ></app-course-details-info-section>
+      </app-section>
+
+      <app-mini-section>
+        <app-course-key-facts-section
+          [price]="course.price"
+          [times]="course | translateObject:'attendanceTimes':'attendanceTimesDe'"
+          [duration]="course | translateObject:'duration':'durationDe'"
+          [language]="course | translateObject:'language':'languageDe'"
+          [level]="course | translateObject:'level':'levelDe'"
+          [location]="course.location"
+        ></app-course-key-facts-section>
+      </app-mini-section>
+
+      <app-course-technologies-section [tech]="tech"></app-course-technologies-section>
+      <app-course-requirements-section [dates]="course.dates" [requirements]="course | translateObject:'requirements':'requirementsDe'"></app-course-requirements-section>
+      <app-financing [course]="course"></app-financing>
+
+
+        <app-after-course></app-after-course>
+
+
+    </ng-container>
+
+    <ng-template #notFound>
+      <h6 class="center not-found">Course not found..</h6>
+    </ng-template>
+
+    <ng-container *ngIf="error">
+      <p class="center error">Something went wrong: {{ error }}</p>
+    </ng-container>
+  </ng-template>
+</div>

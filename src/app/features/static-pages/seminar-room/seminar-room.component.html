@@ -1,0 +1,56 @@
+<app-section>
+  <app-hero
+    [title]="'seminarRoom.title' | translate"
+    [img]="'/images/illustrations/seminar-room.png'">
+
+    <p class="monospace">
+      {{ 'seminarRoom.subtitle' | translate }}
+    </p>
+    <app-button (click)="openContactDialog()">{{ 'seminarRoom.button' | translate }}</app-button>
+  </app-hero>
+
+</app-section>
+<app-section>
+  <div class="grid-wrapper">
+    <div class="img-wrapper">
+      <img fill ngSrc="/images/illustrations/seminar-room-woman.png"
+           alt="illustration of a persons pointing with both hands on the text next to her">
+    </div>
+    <div class="content">
+      <p class="monospace">{{ 'seminarRoom.welcomeTextTitle' | translate }}
+      </p>
+      <ul>
+        <li class="monospace">{{ 'seminarRoom.li1' | translate }}</li>
+        <li class="monospace">{{ 'seminarRoom.li2' | translate }}</li>
+        <li class="monospace">{{ 'seminarRoom.li3' | translate }}</li>
+        <li class="monospace">{{ 'seminarRoom.li4' | translate }}</li>
+        <li class="monospace">{{ 'seminarRoom.li5' | translate }}</li>
+        <li class="monospace">{{ 'seminarRoom.li6' | translate }}</li>
+      </ul>
+      <button class="monospace" mat-fab extended (click)="openContactDialog()">{{ 'seminarRoom.prices.button' | translate }}</button>
+
+    </div>
+
+  </div>
+</app-section>
+
+<app-large-room [images]="ROOM_IMAGES"
+                [title]="'seminarRoom.largeRoom.title' | translate"
+                [subtitle]="'seminarRoom.largeRoom.subtitle' | translate"
+                [swiperClass]="'swiper1'"
+            >
+</app-large-room>
+<app-large-room [images]="SMALLROOM_IMAGES"
+                [title]="'seminarRoom.smallRoom.title' | translate"
+                [subtitle]="'seminarRoom.smallRoom.subtitle' | translate"
+                [swiperClass]="'swiper2'">
+</app-large-room>
+<app-large-room [images]="OTHER_ROOMS_IMAGES"
+                [title]="'seminarRoom.other.title' | translate"
+                [subtitle]="''"
+                [swiperClass]="'swiper3'">
+</app-large-room>
+<app-section>
+  <app-price-list/>
+</app-section>
+

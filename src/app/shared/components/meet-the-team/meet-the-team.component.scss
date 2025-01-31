@@ -1,0 +1,116 @@
+@use '../../../../sass/abstracts/index' as a;
+
+
+h6{
+  font-weight: 900;
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  @include a.mq(medium){
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+}
+.team{
+  display: flex;
+  min-height: 400px;
+  max-width: 100%;
+  justify-content: center;
+  & > *{
+    width: 90%;
+    height:90%;
+    flex:1;
+  }
+  .team-member {
+    box-sizing: border-box;
+   position: relative;
+    &__image {
+      transition: 500ms;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      //left: 25%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+      filter: drop-shadow(-6px -2px 12px black);
+
+    }
+    &:hover{
+      img{
+        scale: 0.98;
+        translate: 5px 5px;
+        filter: drop-shadow(-2px -2px 4px black);
+      }
+    }
+  }
+  .team-member::before,
+  {
+    content: "";
+    width: 0;
+    height: 0;
+    box-sizing: inherit;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    border: 3px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+
+  }
+
+
+
+  .team-member:hover::before {
+    width: 50%;
+    height: 70%;
+    border-top-color: a.clr(special, accent);
+    border-right-color:  a.clr(special, accent);
+
+  }
+
+@include a.mq(large){
+  flex-direction: column;
+  gap: 2rem;
+}
+
+}
+
+
+.container {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+.title {
+  text-shadow: 0 0 3px a.clr(bg, light);
+  opacity: 0;
+  font-size: 22px;
+  color:  a.clr(bg, accent);
+  margin-bottom: 50px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transition: all 1s;
+  z-index: 9;
+}
+.title > span {
+  opacity: 0;
+  font-size: 16px;
+  display: block;
+  color:  a.clr(bg, accent);
+}
+
+.team-member:hover .container .title,
+.team-member:hover .container .desc {
+  left: 70%;
+  opacity: 1;
+  & span{
+    opacity: 1;
+  }
+}
+

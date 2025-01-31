@@ -1,0 +1,21 @@
+
+<app-section>
+  <div *ngIf="isLoading">
+    <h1>Loading...</h1>
+  </div>
+  <div *ngIf="!isLoading">
+    <div class="wrapper" *ngIf="courses.length > 0">
+      <app-upcoming-courses
+        [courses]="courses"
+        [categoryName]="courses[0] | translateObject:'category':'categoryDe'"
+      [image]="'/gifs/keyboardAndFingerprint.gif'"/>
+    </div>
+    <div *ngIf="courses.length === 0">
+      <h2 class="center">No courses available for this category :(</h2>
+    </div>
+    <div *ngIf="error">
+      <h3 class="error center">{{ error }}</h3>
+    </div>
+  </div>
+</app-section>
+

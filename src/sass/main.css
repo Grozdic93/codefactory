@@ -1,0 +1,353 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+.clr-neutral-light {
+  color: #f5f5f5;
+}
+
+.bg-neutral-light {
+  background-color: #f5f5f5;
+}
+
+.clr-neutral-normal {
+  color: gray;
+}
+
+.bg-neutral-normal {
+  background-color: gray;
+}
+
+.clr-neutral-dark {
+  color: #333;
+}
+
+.bg-neutral-dark {
+  background-color: #333;
+}
+
+.clr-primary-light {
+  color: #f5f5f5;
+}
+
+.bg-primary-light {
+  background-color: #f5f5f5;
+}
+
+.clr-primary-normal {
+  color: gray;
+}
+
+.bg-primary-normal {
+  background-color: gray;
+}
+
+.clr-primary-dark {
+  color: #333;
+}
+
+.bg-primary-dark {
+  background-color: #333;
+}
+
+.clr-accent-normal {
+  color: #900000;
+}
+
+.bg-accent-normal {
+  background-color: #900000;
+}
+
+.clr-accent-dark {
+  color: #A6936E;
+}
+
+.bg-accent-dark {
+  background-color: #A6936E;
+}
+
+.fs-300 {
+  font-size: 1rem;
+}
+
+.fs-400 {
+  font-size: 1.125rem;
+}
+
+.fs-500 {
+  font-size: 1.5rem;
+}
+
+.margin-8 {
+  margin: 0.5rem;
+}
+.margin-8-block-start {
+  margin-block-start: 0.5rem;
+}
+.margin-8-block-end {
+  margin-block-end: 0.5rem;
+}
+.margin-8-block {
+  margin-block: 0.5rem;
+}
+.margin-8-inline-start {
+  margin-inline-start: 0.5rem;
+}
+.margin-8-inline-end {
+  margin-inline-end: 0.5rem;
+}
+.margin-8-inline {
+  margin-inline: 0.5rem;
+}
+
+.padding-8 {
+  padding: 0.5rem;
+}
+.padding-8-block-start {
+  padding-block-start: 0.5rem;
+}
+.padding-8-block-end {
+  padding-block-end: 0.5rem;
+}
+.padding-8-block {
+  padding-block: 0.5rem;
+}
+.padding-8-inline-start {
+  padding-inline-start: 0.5rem;
+}
+.padding-8-inline-end {
+  padding-inline-end: 0.5rem;
+}
+.padding-8-inline {
+  padding-inline: 0.5rem;
+}
+
+.margin-12 {
+  margin: 0.75rem;
+}
+.margin-12-block-start {
+  margin-block-start: 0.75rem;
+}
+.margin-12-block-end {
+  margin-block-end: 0.75rem;
+}
+.margin-12-block {
+  margin-block: 0.75rem;
+}
+.margin-12-inline-start {
+  margin-inline-start: 0.75rem;
+}
+.margin-12-inline-end {
+  margin-inline-end: 0.75rem;
+}
+.margin-12-inline {
+  margin-inline: 0.75rem;
+}
+
+.padding-12 {
+  padding: 0.75rem;
+}
+.padding-12-block-start {
+  padding-block-start: 0.75rem;
+}
+.padding-12-block-end {
+  padding-block-end: 0.75rem;
+}
+.padding-12-block {
+  padding-block: 0.75rem;
+}
+.padding-12-inline-start {
+  padding-inline-start: 0.75rem;
+}
+.padding-12-inline-end {
+  padding-inline-end: 0.75rem;
+}
+.padding-12-inline {
+  padding-inline: 0.75rem;
+}
+
+.margin-16 {
+  margin: 1rem;
+}
+.margin-16-block-start {
+  margin-block-start: 1rem;
+}
+.margin-16-block-end {
+  margin-block-end: 1rem;
+}
+.margin-16-block {
+  margin-block: 1rem;
+}
+.margin-16-inline-start {
+  margin-inline-start: 1rem;
+}
+.margin-16-inline-end {
+  margin-inline-end: 1rem;
+}
+.margin-16-inline {
+  margin-inline: 1rem;
+}
+
+.padding-16 {
+  padding: 1rem;
+}
+.padding-16-block-start {
+  padding-block-start: 1rem;
+}
+.padding-16-block-end {
+  padding-block-end: 1rem;
+}
+.padding-16-block {
+  padding-block: 1rem;
+}
+.padding-16-inline-start {
+  padding-inline-start: 1rem;
+}
+.padding-16-inline-end {
+  padding-inline-end: 1rem;
+}
+.padding-16-inline {
+  padding-inline: 1rem;
+}
+
+.margin-20 {
+  margin: 1.25rem;
+}
+.margin-20-block-start {
+  margin-block-start: 1.25rem;
+}
+.margin-20-block-end {
+  margin-block-end: 1.25rem;
+}
+.margin-20-block {
+  margin-block: 1.25rem;
+}
+.margin-20-inline-start {
+  margin-inline-start: 1.25rem;
+}
+.margin-20-inline-end {
+  margin-inline-end: 1.25rem;
+}
+.margin-20-inline {
+  margin-inline: 1.25rem;
+}
+
+.padding-20 {
+  padding: 1.25rem;
+}
+.padding-20-block-start {
+  padding-block-start: 1.25rem;
+}
+.padding-20-block-end {
+  padding-block-end: 1.25rem;
+}
+.padding-20-block {
+  padding-block: 1.25rem;
+}
+.padding-20-inline-start {
+  padding-inline-start: 1.25rem;
+}
+.padding-20-inline-end {
+  padding-inline-end: 1.25rem;
+}
+.padding-20-inline {
+  padding-inline: 1.25rem;
+}
+
+.margin-32 {
+  margin: 2rem;
+}
+.margin-32-block-start {
+  margin-block-start: 2rem;
+}
+.margin-32-block-end {
+  margin-block-end: 2rem;
+}
+.margin-32-block {
+  margin-block: 2rem;
+}
+.margin-32-inline-start {
+  margin-inline-start: 2rem;
+}
+.margin-32-inline-end {
+  margin-inline-end: 2rem;
+}
+.margin-32-inline {
+  margin-inline: 2rem;
+}
+
+.padding-32 {
+  padding: 2rem;
+}
+.padding-32-block-start {
+  padding-block-start: 2rem;
+}
+.padding-32-block-end {
+  padding-block-end: 2rem;
+}
+.padding-32-block {
+  padding-block: 2rem;
+}
+.padding-32-inline-start {
+  padding-inline-start: 2rem;
+}
+.padding-32-inline-end {
+  padding-inline-end: 2rem;
+}
+.padding-32-inline {
+  padding-inline: 2rem;
+}
+
+.margin-36 {
+  margin: 2.25rem;
+}
+.margin-36-block-start {
+  margin-block-start: 2.25rem;
+}
+.margin-36-block-end {
+  margin-block-end: 2.25rem;
+}
+.margin-36-block {
+  margin-block: 2.25rem;
+}
+.margin-36-inline-start {
+  margin-inline-start: 2.25rem;
+}
+.margin-36-inline-end {
+  margin-inline-end: 2.25rem;
+}
+.margin-36-inline {
+  margin-inline: 2.25rem;
+}
+
+.padding-36 {
+  padding: 2.25rem;
+}
+.padding-36-block-start {
+  padding-block-start: 2.25rem;
+}
+.padding-36-block-end {
+  padding-block-end: 2.25rem;
+}
+.padding-36-block {
+  padding-block: 2.25rem;
+}
+.padding-36-inline-start {
+  padding-inline-start: 2.25rem;
+}
+.padding-36-inline-end {
+  padding-inline-end: 2.25rem;
+}
+.padding-36-inline {
+  padding-inline: 2.25rem;
+}
+
+/*# sourceMappingURL=main.css.map */

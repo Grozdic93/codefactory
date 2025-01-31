@@ -1,0 +1,95 @@
+[data-theme=light] {
+  --bg-light: #f5f5f5;
+  --bg-neutral: #333;
+  --bg-dark: black;
+  --bg-accent:#900000;
+  --bg-accent-gold: #A6936E;
+  --text-light: #f5f5f5;
+  --text-neutral: #333;
+  --text-dark: black;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 100% /.7);
+  --transparent-dark: hsla(0 0% 0% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: white;
+  --bg-gradient-normal: #f5f5f5;
+  --scoller-clr: #FEFEFE;
+  --transparent: transparent;
+}
+
+:root {
+  --swich-color: #4a4e69;
+  --swich-background: #f4f3f2;
+}
+
+[data-theme=dark] {
+  --swich-color: #c9ada7;
+  --background: #11112a;
+  --bg-light: #333;
+  --bg-neutral: black;
+  --bg-dark: #f5f5f5;
+  --bg-accent:#A6936E;
+  --bg-accent-gold: #A6936E;
+  --text-light: black;
+  --text-neutral: black;
+  --text-dark: #f5f5f5;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 0% /.7);
+  --transparent-dark: hsla(0 0% 100% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: #333;
+  --bg-gradient-normal: #444;
+  --scoller-clr: #333333;
+  --transparent: #A6936E;
+}
+
+:root {
+  --dropdown-link-font-size: .8rem;
+}
+
+.img-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 45em) {
+  .img-wrapper {
+    height: 400px;
+  }
+}
+.img-wrapper img {
+  object-fit: contain;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 45em) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.grid-wrapper .content ul {
+  width: 90%;
+  margin-inline: auto;
+}
+.grid-wrapper .content button {
+  margin-top: 2rem;
+  width: 65%;
+  margin-inline: auto;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=seminar-room.component.css.map */

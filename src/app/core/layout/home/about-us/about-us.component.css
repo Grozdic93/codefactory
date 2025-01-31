@@ -1,0 +1,118 @@
+[data-theme=light] {
+  --bg-light: #f5f5f5;
+  --bg-neutral: #333;
+  --bg-dark: black;
+  --bg-accent:#900000;
+  --bg-accent-gold: #A6936E;
+  --text-light: #f5f5f5;
+  --text-neutral: #333;
+  --text-dark: black;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 100% /.7);
+  --transparent-dark: hsla(0 0% 0% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: white;
+  --bg-gradient-normal: #f5f5f5;
+  --scoller-clr: #FEFEFE;
+  --transparent: transparent;
+}
+
+:root {
+  --swich-color: #4a4e69;
+  --swich-background: #f4f3f2;
+}
+
+[data-theme=dark] {
+  --swich-color: #c9ada7;
+  --background: #11112a;
+  --bg-light: #333;
+  --bg-neutral: black;
+  --bg-dark: #f5f5f5;
+  --bg-accent:#A6936E;
+  --bg-accent-gold: #A6936E;
+  --text-light: black;
+  --text-neutral: black;
+  --text-dark: #f5f5f5;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 0% /.7);
+  --transparent-dark: hsla(0 0% 100% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: #333;
+  --bg-gradient-normal: #444;
+  --scoller-clr: #333333;
+  --transparent: #A6936E;
+}
+
+:root {
+  --dropdown-link-font-size: .8rem;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+.wrapper .backgroundLogo {
+  position: absolute;
+  opacity: 0.2;
+  top: 200px;
+  left: -280px;
+}
+@media screen and (max-width: 65em) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.wrapper hr {
+  margin-block: 1rem;
+}
+.wrapper h6 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 3.4rem;
+}
+@media screen and (max-width: 45em) {
+  .wrapper h6 {
+    font-size: 2rem;
+  }
+}
+.wrapper .aside {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .sprites {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.wrapper .sprites .sprite {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .sprites .sprite p {
+  font-weight: 900;
+  font-size: 1rem;
+  min-height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+@media screen and (max-width: 45em) {
+  .wrapper .sprites {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .sprites .sprite {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=about-us.component.css.map */

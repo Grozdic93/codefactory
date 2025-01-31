@@ -1,0 +1,33 @@
+@use '../../../../../sass/abstracts/index' as a;
+
+
+.wrapper{
+  min-height: 100lvh;
+  position: relative;
+  display:grid;
+  align-items: center;
+  grid-template-columns: 1fr 21% 21% 21%;
+  gap: 2rem;
+
+
+
+  .backgroundLogo{
+    position: absolute;
+    opacity: .2;
+    top: -20%;
+    left: -5%;
+
+  }
+
+  .content{
+    padding: .6em
+  }
+
+  @include a.mq(large){
+  grid-template-columns: 1fr;
+    & > .grid-section-first{
+      transform: unset;
+    }
+
+  }
+}

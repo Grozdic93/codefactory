@@ -1,0 +1,232 @@
+<h2
+  *ngIf="selectedAction == 'estimate'"
+  class="dialog-title"
+  style="padding: 2rem"
+  mat-dialog-title
+>
+  {{ "formDialog.title1" | translate }}
+</h2>
+<h2
+  *ngIf="selectedAction == 'register'"
+  class="dialog-title"
+  style="padding: 2rem"
+  mat-dialog-title
+>
+  {{ "formDialog.title2" | translate }}
+</h2>
+<span class="extra-small" *ngIf="selectedAction == 'register'"
+  ><i class="fa fa-star-of-life"></i>
+  {{ "formDialog.costNote" | translate }}</span
+>
+<mat-dialog-content style="padding: 3rem">
+  <mat-button-toggle-group
+    style="margin-bottom: 20px; width: 100%"
+    #group="matButtonToggleGroup"
+    [(ngModel)]="selectedAction"
+    aria-label="Action Selection"
+  >
+    <mat-button-toggle class="example-full-width" value="estimate">{{
+      "formDialog.titleOfRadio1" | translate
+    }}</mat-button-toggle>
+    <mat-button-toggle class="example-full-width" value="register">{{
+      "formDialog.titleOfRadio2" | translate
+    }}</mat-button-toggle>
+  </mat-button-toggle-group>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field style="width: 50%" appearance="fill">
+      <mat-label>{{ "formDialog.title.title" | translate }}</mat-label>
+      <mat-select formControlName="title" required>
+        <mat-option value="Herr">{{
+          "formDialog.title.option1" | translate
+        }}</mat-option>
+        <mat-option value="Frau">{{
+          "formDialog.title.option2" | translate
+        }}</mat-option>
+        <mat-option value=" ">{{
+          "formDialog.title.option3" | translate
+        }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="form.get('title')?.hasError('required')">{{
+        "formDialog.title.error" | translate
+      }}</mat-error>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>{{ "formDialog.firstName.title" | translate }}</mat-label>
+      <input matInput formControlName="fname" required />
+      <mat-error *ngIf="form.get('fname')?.hasError('required')"
+        >{{ "formDialog.firstName.error" | translate }}
+      </mat-error>
+      <mat-error *ngIf="form.get('fname')?.hasError('pattern')"
+        >{{ "formDialog.firstName.errorPattern" | translate }}
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>{{ "formDialog.lastName.title" | translate }}</mat-label>
+      <input matInput formControlName="lname" required />
+      <mat-error *ngIf="form.get('lname')?.hasError('required')"
+        >{{ "formDialog.lastName.error" | translate }}
+      </mat-error>
+      <mat-error *ngIf="form.get('lname')?.hasError('pattern')"
+        >{{ "formDialog.lastName.errorPattern" | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>{{ "formDialog.email.title" | translate }}</mat-label>
+      <input matInput formControlName="email" type="email" required />
+      <mat-error *ngIf="form.get('email')?.hasError('required')">{{
+        "formDialog.email.error" | translate
+      }}</mat-error>
+      <mat-error *ngIf="form.get('email')?.hasError('email')">{{
+        "formDialog.email.invalid" | translate
+      }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>{{ "formDialog.svn.title" | translate }}</mat-label>
+      <input matInput formControlName="sv" type="number" required />
+      <mat-error *ngIf="form.get('sv')?.hasError('required')">{{
+        "formDialog.svn.error" | translate
+      }}</mat-error>
+      <mat-error *ngIf="form.get('sv')?.hasError('pattern')">{{
+        "formDialog.svn.length" | translate
+      }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>{{ "formDialog.phone.title" | translate }}</mat-label>
+      <input matInput formControlName="phoneNumber" type="text" required />
+      <mat-error *ngIf="form.get('phoneNumber')?.hasError('required')"
+        >{{ "formDialog.phone.error" | translate }}
+      </mat-error>
+      <mat-error *ngIf="form.get('phoneNumber')?.hasError('pattern')"
+        >{{ "formDialog.phone.errorPattern" | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>{{ "formDialog.selectCourse.title" | translate }}</mat-label>
+        <mat-select formControlName="course" required>
+          <mat-option *ngFor="let course of courses" [value]="course.id">{{
+            course | translateObject : "name" : "nameDe"
+          }}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('course')?.hasError('required')"
+          >Course selection is required</mat-error
+        >
+      </mat-form-field>
+    </div>
+    <div *ngIf="selectedCourseDates.length > 0">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>{{ "formDialog.selectCourse.date" | translate }}</mat-label>
+        <mat-select formControlName="date" required>
+          <mat-option
+            *ngFor="let date of selectedCourseDates"
+            [value]="date.startDate + ' - ' + date.endDate"
+          >
+            {{ date.startDate | date : "dd.MM.yyyy" }} -
+            {{ date.endDate | date : "dd.MM.yyyy" }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('date')?.hasError('required')"
+          >Date selection is required</mat-error
+        >
+      </mat-form-field>
+    </div>
+    <div *ngIf="selectedAction === 'estimate'">
+      <mat-radio-group formControlName="to" required>
+        <mat-radio-button value="AMS">{{
+          "formDialog.to.ams" | translate
+        }}</mat-radio-button>
+        <mat-radio-button value="WAFF">{{
+          "formDialog.to.waff" | translate
+        }}</mat-radio-button>
+        <mat-radio-button value="AMS">{{
+          "formDialog.to.estimateOther" | translate
+        }}</mat-radio-button>
+      </mat-radio-group>
+      <mat-error *ngIf="form.get('to')?.hasError('required')">{{
+        "formDialog.to.error" | translate
+      }}</mat-error>
+    </div>
+    <div *ngIf="selectedAction === 'register'">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>{{ "formDialog.voucher.label" | translate }}</mat-label>
+        <input matInput formControlName="voucher" />
+      </mat-form-field>
+      <mat-radio-group formControlName="to" required>
+        <mat-radio-button value="AMS">{{
+          "formDialog.to.ams" | translate
+        }}</mat-radio-button>
+        <mat-radio-button value="WAFF">{{
+          "formDialog.to.waff" | translate
+        }}</mat-radio-button>
+        <mat-radio-button value="private">{{
+          "formDialog.to.private" | translate
+        }}</mat-radio-button>
+        <mat-radio-button value="other">{{
+          "formDialog.to.estimateOther" | translate
+        }}</mat-radio-button>
+      </mat-radio-group>
+      <mat-error *ngIf="form.get('to')?.hasError('required')">{{
+        "formDialog.to.error" | translate
+      }}</mat-error>
+      <div *ngIf="form.get('to')?.value !== 'private'">
+        <input
+          accept="image/*, .pdf, .doc, .docx"
+          type="file"
+          class="file-input"
+          (change)="onFileSelected($event)"
+          #fileUpload
+        />
+        <div class="file-upload">
+          {{ fileName || ("formDialog.file.label" | translate) }}
+          <button
+            mat-mini-fab
+            color="primary"
+            class="upload-btn"
+            (click)="
+        $event.preventDefault();
+        $event.stopPropagation();
+        fileUpload.click()
+      "
+          >
+            <i class="fa-solid fa-paperclip"></i>
+          </button>
+        </div>
+        <mat-error *ngIf="form.get('fileUpload')?.hasError('required') && form.get('fileUpload')?.touched">
+          {{ "formDialog.file.error" | translate }}
+        </mat-error>
+      </div>
+      <div *ngIf="form.get('to')?.value == 'other'">
+        <mat-form-field class="example-full-width">
+          <mat-label>{{
+            "formDialog.description.title" | translate
+          }}</mat-label>
+          <textarea formControlName="description" matInput></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+    <mat-dialog-actions>
+      @if(!isLoading){
+      <button mat-button type="button" (click)="onNoClick()">Cancel</button>
+      <button mat-button type="submit" [disabled]="form.invalid || isLoading">
+        Submit
+      </button>
+
+      }@else{
+      <mat-spinner style="scale: 0.3"></mat-spinner>
+
+      }
+    </mat-dialog-actions>
+  </form>
+  <div *ngIf="submitSuccess" class="success-message">
+    {{ "formDialog.message.success" | translate }}
+  </div>
+  <div *ngIf="submitError" class="error-message">
+    {{ "formDialog.message.error" | translate }}
+  </div>
+</mat-dialog-content>

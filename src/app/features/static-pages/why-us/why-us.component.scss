@@ -1,0 +1,29 @@
+@use '../../../../sass/abstracts' as a;
+.bold{
+    font-weight: bold;
+}
+.columns{
+  display: grid;
+  gap: 2rem;
+}
+.center{
+  display: grid;
+  place-content: center;
+  text-align: center;
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+
+}
+.btn{
+  width: 300px;
+  font-size: 1.3rem;
+  margin-inline: auto;
+  margin-block: 3rem;
+  @include a.mq(medium){
+    width: 100%;
+  }
+}
+.divider{
+  margin-block: 100px;
+}

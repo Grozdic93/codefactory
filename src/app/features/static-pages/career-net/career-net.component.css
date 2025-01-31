@@ -1,0 +1,122 @@
+[data-theme=light] {
+  --bg-light: #f5f5f5;
+  --bg-neutral: #333;
+  --bg-dark: black;
+  --bg-accent:#900000;
+  --bg-accent-gold: #A6936E;
+  --text-light: #f5f5f5;
+  --text-neutral: #333;
+  --text-dark: black;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 100% /.7);
+  --transparent-dark: hsla(0 0% 0% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: white;
+  --bg-gradient-normal: #f5f5f5;
+  --scoller-clr: #FEFEFE;
+  --transparent: transparent;
+}
+
+:root {
+  --swich-color: #4a4e69;
+  --swich-background: #f4f3f2;
+}
+
+[data-theme=dark] {
+  --swich-color: #c9ada7;
+  --background: #11112a;
+  --bg-light: #333;
+  --bg-neutral: black;
+  --bg-dark: #f5f5f5;
+  --bg-accent:#A6936E;
+  --bg-accent-gold: #A6936E;
+  --text-light: black;
+  --text-neutral: black;
+  --text-dark: #f5f5f5;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 0% /.7);
+  --transparent-dark: hsla(0 0% 100% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: #333;
+  --bg-gradient-normal: #444;
+  --scoller-clr: #333333;
+  --transparent: #A6936E;
+}
+
+:root {
+  --dropdown-link-font-size: .8rem;
+}
+
+.btn {
+  width: min(100%, 400px);
+  font-size: 1.2rem;
+  margin-left: 100px;
+}
+@media screen and (max-width: 65em) {
+  .btn {
+    margin-left: unset;
+  }
+}
+
+.columns {
+  display: grid;
+  gap: 2rem;
+}
+.columns.short {
+  width: 80%;
+  margin-inline: auto;
+  gap: 4rem;
+}
+@media screen and (max-width: 45em) {
+  .columns.short {
+    width: 100%;
+    gap: 2rem;
+  }
+}
+
+.indent {
+  display: grid;
+  gap: 2rem;
+  margin-left: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid .sprite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 65em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 45em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.arrow-down {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=career-net.component.css.map */

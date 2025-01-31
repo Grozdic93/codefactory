@@ -1,0 +1,49 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+}
+.dashboard h2 {
+  margin-bottom: 1rem;
+}
+.dashboard form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dashboard form label {
+  margin-top: 1rem;
+}
+.dashboard form input, .dashboard form textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.dashboard form .error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.dashboard form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.dashboard form button.submit {
+  background-color: #37a410;
+}
+.dashboard form button.submit:hover {
+  background-color: #346809;
+}
+.dashboard form button:hover {
+  background-color: #0056b3;
+}
+.dashboard form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=add-course.component.css.map */

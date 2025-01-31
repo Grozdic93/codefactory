@@ -1,0 +1,15 @@
+.content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.route-container {
+  flex: 1;
+}
+
+.footer-wrapper {
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=app.component.css.map */

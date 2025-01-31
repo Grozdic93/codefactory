@@ -1,0 +1,25 @@
+@if(requirements){
+  <div class="wrapper">
+    <div class="req">
+      <h5 class="h1">{{ 'courseDetails.req.title' |translate }}</h5>
+      <p class="monospace myP">{{ requirements }}</p>
+    </div>
+    <div class="starts">
+      <h5 class="h1">{{ 'courseDetails.req.starts' |translate }}</h5>
+      <div class="dates">
+        <ul class="datesList">
+        @for(date of dates; track $index){
+
+
+            <li> <p class="monospace"><i class="fa-solid fa-circle-dot"></i>{{ date.startDate | date}}</p></li>
+
+
+        }
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+}

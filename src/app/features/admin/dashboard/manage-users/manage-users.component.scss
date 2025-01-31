@@ -1,0 +1,61 @@
+.manage-users {
+  h1 {
+    text-align: center;
+  }
+
+  .user-admin-sections {
+    display: flex;
+    justify-content: space-around;
+
+    .users-section, .admins-section {
+      width: 45%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    button {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .create-admin {
+    margin-top: 2rem;
+    text-align: center;
+
+    form {
+      display: inline-block;
+      text-align: left;
+
+      div {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+
+      input {
+        padding: 0.5rem;
+        width: 200px;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div>
+    <h1>{{ courseName }}</h1>
+    <h4>{{ 'courseDetails.start' | translate }}</h4>
+    @if (formattedDate) {
+      <h4>{{ formattedDate }}</h4>
+    }
+
+    <div class="flex">
+      <h4>{{ price | currency:"EUR" }}</h4>
+      <div>
+        <app-button (click)="openRegisterDialog()">{{ 'courseDetails.btnRegister' | translate }}</app-button>
+        <app-button (click)="openEstimateDialog()">{{ 'courseDetails.btnCost' | translate }}</app-button>
+      </div>
+    </div>
+    <span
+      class="footnote">{{ 'courseDetails.info' | translate }}</span>
+
+  </div>
+  <img [src]="'/images/course-thumbs/' + thumb + '.png'"
+       [alt]="'illustration that represents ' + courseName">
+
+</div>
+

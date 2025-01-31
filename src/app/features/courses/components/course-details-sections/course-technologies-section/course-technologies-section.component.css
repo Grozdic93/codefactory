@@ -1,0 +1,38 @@
+.wrapper {
+  position: relative;
+  min-height: 500px;
+}
+.wrapper img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+.wrapper h3 {
+  text-align: center;
+  margin-block: 4rem;
+}
+.wrapper .columns {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.wrapper .columns .column h4 {
+  margin-bottom: 2rem;
+}
+.wrapper .columns .column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wrapper .columns .column ul li {
+  font-family: "Roboto Mono", monospace;
+}
+
+/*# sourceMappingURL=course-technologies-section.component.css.map */

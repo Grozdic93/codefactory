@@ -1,0 +1,173 @@
+<div class="dashboard">
+  <h2>Add New Course</h2>
+  <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+    <label for="name-en">Name (English)</label>
+    <input id="name-en" formControlName="name" type="text">
+
+    <label for="name-de">Name (German)</label>
+    <input id="name-de" formControlName="nameDe" type="text">
+
+    <label for="category">Category</label>
+    <select required id="category" formControlName="category">
+      <option selected value="full-time">Full-time</option>
+      <option value="part-time">Part-time</option>
+      <option value="basic">Basic</option>
+    </select>
+
+    <label for="category">Category (German)</label>
+    <select required id="categoryDe" formControlName="categoryDe">
+      <option selected value="Vollzeit">Vollzeit</option>
+      <option value="Teilzeit">Teilzeit</option>
+      <option value="Basic">Basic</option>
+    </select>
+
+    <label for="description-en">Description (English)</label>
+    <textarea cols="30" rows="5" id="description-en" formControlName="description"
+              placeholder="Look no further than our 16-week immersive program! Whether you prefer to learn online or onsite, we've got you covered with expert instruction in all aspects of programming and web development. You'll graduate with the skills and knowledge to build dynamic, user-friendly websites and web applications from start to finish.
+Don't wait to start your career in this exciting field - enroll now in our full stack web developer program. "
+    ></textarea>
+
+    <label for="description-de">Description (German)</label>
+    <textarea cols="30" rows="5" id="description-de" formControlName="descriptionDe"></textarea>
+
+    <div formArrayName="dates">
+      <div *ngFor="let date of dates.controls; let i = index" [formGroupName]="i">
+        <label for="startDate">Start Date</label>
+        <input id="startDate" formControlName="startDate" type="date">
+        <div *ngIf="date.get('startDate')?.invalid && date.get('startDate')?.touched" class="error">
+          <div *ngIf="date.get('startDate')?.errors?.['required']">Start Date is required.</div>
+        </div>
+
+        <label for="endDate">End Date</label>
+        <input id="endDate" formControlName="endDate" type="date">
+        <div *ngIf="date.get('endDate')?.invalid && date.get('endDate')?.touched" class="error">
+          <div *ngIf="date.get('endDate')?.errors?.['required']">End Date is required.</div>
+        </div>
+
+        <button type="button" (click)="removeDate(i)">Remove Date</button>
+        <hr style="margin: 1rem">
+      </div>
+    </div>
+    <button type="button" (click)="addDate()">Add Date</button>
+
+    <label for="img">Image URL</label>
+    <input id="img" formControlName="img" type="text">
+    <div *ngIf="courseForm.get('img')?.invalid && courseForm.get('img')?.touched" class="error">
+      <div *ngIf="courseForm.get('img')?.errors?.['required']">Image is required.</div>
+    </div>
+
+    <label for="thumbnail">Thumbnail URL</label>
+    <input id="thumbnail" formControlName="thumbnail" type="text">
+    <div *ngIf="courseForm.get('thumbnail')?.invalid && courseForm.get('thumbnail')?.touched" class="error">
+      <div *ngIf="courseForm.get('thumbnail')?.errors?.['required']">Thumbnail is required.</div>
+    </div>
+
+    <label for="price">Price</label>
+    <input id="price" formControlName="price" type="number">
+    <div *ngIf="courseForm.get('price')?.invalid && courseForm.get('price')?.touched" class="error">
+      <div *ngIf="courseForm.get('price')?.errors?.['required']">Price is required.</div>
+    </div>
+
+    <label for="attendanceTimes-en">Attendance Times (English)</label>
+    <select name="attendanceTimes-en" id="attendanceTimes-en" formControlName="attendanceTimes">
+      <option selected value="Mo-Fr, 09:00 - 16:00">Monday to Thursday 09:00 to 16:00</option>
+      <option value="Mo-Wed-Fr, 18:00 - 21:00">Monday-Wednesday-Friday 18:00 to 21:00</option>
+      <option value="Sa-Su, 09:00 - 16:00">Saturday and Sunday 09:00 to 15:00</option>
+    </select>
+
+    <label for="attendanceTimes-de">Attendance Times (German)</label>
+    <select name="attendanceTimes-de" id="attendanceTimes-de" formControlName="attendanceTimesDe">
+      <option selected value="Mo-Fr, 09:00 -16:00">Montag bis Donnerstag 09:00 bis 16:00</option>
+      <option value="Mo-Mi-Fr, 18:00 - 21:00">Montag-Mittwoch-Freitag 18:00 bis 21:00</option>
+      <option value="Sa-So, 09:00 - 16:00">Samstag Und Sontag 09:00 bis 15:00</option>
+    </select>
+
+    <label for="duration-en">Duration (English)</label>
+    <input placeholder="16 Weeks" id="duration-en" formControlName="duration" type="text">
+
+    <label for="duration-de">Duration (German)</label>
+    <input id="duration-de" formControlName="durationDe" type="text">
+
+    <label for="language">Language (English)</label>
+    <input placeholder="English" id="language" formControlName="language" type="text">
+
+    <label for="language-de">Language (German)</label>
+    <input placeholder="Englisch" id="language-de" formControlName="languageDe" type="text">
+
+    <label for="level-en">Level (English)</label>
+    <input id="level-en" formControlName="level" type="text">
+
+    <label for="level-de">Level (German)</label>
+    <input id="level-de" formControlName="levelDe" type="text">
+
+    <label for="location-en">Location (English)</label>
+    <select id="location-en" formControlName="location">
+      <option selected value="online // onsite">online // onsite</option>
+      <option value="online">online</option>
+      <option value="onsite">onsite</option>
+    </select>
+
+    <label for="requirements-en">Requirements (English)</label>
+    <textarea id="requirements-en"
+              formControlName="requirements"
+              cols="30" rows="5"
+              placeholder="The Full stack Web Developer course requires motivation and a willingness to learn. Previous knowledge in HTML/CSS or JavaScript can help, but is not necessary. It's recommended to bring your own laptop, or we can provide a rental laptop if required, and good basic English knowledge is essential."></textarea>
+
+    <label for="requirements-de">Requirements (German)</label>
+    <textarea id="requirements-de" formControlName="requirementsDe" cols="30" rows="5"></textarea>
+
+    <div formArrayName="financingOptions">
+      <div *ngFor="let option of financingOptions.controls; let i = index" [formGroupName]="i">
+        <label for="financingName-en">Financing Option Name (English)</label>
+        <select formControlName="name" id="financingName-en">
+          <option value="AMS">AMS</option>
+          <option value="AMS/WAFF">AMS/WAFF</option>
+          <option value="WAFF">WAFF</option>
+          <option value="employer">Employer</option>
+          <option value="partial">Partial</option>
+        </select>
+        <label for="financingName-de">Financing Option Name (German)</label>
+        <select formControlName="nameDe" id="financingName-de">
+          <option value="AMS">AMS</option>
+          <option value="AMS/WAFF">AMS/WAFF</option>
+          <option value="WAFF">WAFF</option>
+          <option value="arbeitgeber">Arbeitgeber</option>
+          <option value="teilweise">Teilweise</option>
+        </select>
+
+        <label for="financingDescription-en">Description (English)</label>
+        <textarea cols="30" rows="5" id="financingDescription-en" formControlName="description"></textarea>
+
+        <label for="financingDescription-de">Description (German)</label>
+        <textarea cols="30" rows="5" id="financingDescription-de" formControlName="descriptionDe"></textarea>
+
+        <label for="financingImg">Image URL</label>
+        <input id="financingImg" formControlName="img" type="text">
+
+        <button type="button" (click)="removeFinancingOption(i)">Remove</button>
+        <hr style="margin: 1rem">
+      </div>
+    </div>
+    <button type="button" (click)="addFinancingOption()">Add Financing Option</button>
+
+    <div formArrayName="technologies">
+      <div *ngFor="let option of technologies.controls; let i = index" [formGroupName]="i">
+        <label for="technologiesName-en">Tech Name</label>
+        <select id="technologiesName-en" formControlName="techName">
+          <optgroup label="(select one)">
+            <option value="Frontend Development">Frontend Development</option>
+            <option value="Backend Development">Backend Development</option>
+          </optgroup>
+        </select>
+
+        <label for="technologiesTags">Tech Tags (comma separated)</label>
+        <input placeholder="HTML,CSS,Angular..." id="technologiesTags" formControlName="techTags" type="text">
+
+        <button type="button" (click)="removeTechnology(i)">Remove</button>
+        <hr style="margin: 1rem">
+      </div>
+    </div>
+    <button type="button" (click)="addTechnology()">Add Technologies</button>
+    <button class="submit" type="submit">Add Course</button>
+  </form>
+</div>

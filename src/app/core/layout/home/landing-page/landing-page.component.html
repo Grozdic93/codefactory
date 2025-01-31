@@ -1,0 +1,20 @@
+<div class="aside-wrapper">
+
+  <aside>
+    <h1>
+      {{ "landingPage.title" | translate }}
+    </h1>
+    <h4>{{ 'landingPage.subtitle' | translate }}</h4>
+    <app-button (click)="onNavigateToCoursesSection($event)">
+
+         {{ 'landingPage.button' | translate }}
+
+
+    </app-button>
+
+
+  </aside>
+  <app-logo [screenTexture]="'/images/cf-bg-long.png'"/>
+</div>
+
+

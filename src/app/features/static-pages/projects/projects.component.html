@@ -1,0 +1,26 @@
+<app-section>
+  <app-hero
+  [img]="'/images/illustrations/projects.png'"
+  [title]="'projects.title' | translate ">
+
+  </app-hero>
+</app-section>
+
+<app-section>
+  <div class="grid">
+    @for(student of students; track $index){
+
+        <div class="item">
+          <h5 class="name">{{ student.name }}</h5>
+          <div class="img-wrapper"  #imgWrapper>
+            <a target="_blank" class="link" [href]="student.link">
+              <img priority fill [ngSrc]="student.image" alt="image of the students project">
+            </a>
+
+          </div>
+        </div>
+
+    }
+
+  </div>
+</app-section>

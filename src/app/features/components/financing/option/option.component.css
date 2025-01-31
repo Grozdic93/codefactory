@@ -1,0 +1,138 @@
+[data-theme=light] {
+  --bg-light: #f5f5f5;
+  --bg-neutral: #333;
+  --bg-dark: black;
+  --bg-accent:#900000;
+  --bg-accent-gold: #A6936E;
+  --text-light: #f5f5f5;
+  --text-neutral: #333;
+  --text-dark: black;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 100% /.7);
+  --transparent-dark: hsla(0 0% 0% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: white;
+  --bg-gradient-normal: #f5f5f5;
+  --scoller-clr: #FEFEFE;
+  --transparent: transparent;
+}
+
+:root {
+  --swich-color: #4a4e69;
+  --swich-background: #f4f3f2;
+}
+
+[data-theme=dark] {
+  --swich-color: #c9ada7;
+  --background: #11112a;
+  --bg-light: #333;
+  --bg-neutral: black;
+  --bg-dark: #f5f5f5;
+  --bg-accent:#A6936E;
+  --bg-accent-gold: #A6936E;
+  --text-light: black;
+  --text-neutral: black;
+  --text-dark: #f5f5f5;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 0% /.7);
+  --transparent-dark: hsla(0 0% 100% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: #333;
+  --bg-gradient-normal: #444;
+  --scoller-clr: #333333;
+  --transparent: #A6936E;
+}
+
+:root {
+  --dropdown-link-font-size: .8rem;
+}
+
+.wrapper {
+  min-height: 300px;
+}
+.wrapper .content {
+  display: flex;
+  height: 100%;
+  gap: 4rem;
+  align-items: center;
+}
+.wrapper .content .title {
+  margin-block: 2rem;
+}
+.wrapper .content .imgTitle {
+  text-align: center;
+}
+.wrapper .content .text {
+  width: 70%;
+}
+@media screen and (max-width: 65em) {
+  .wrapper .content .text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 45em) {
+  .wrapper .content .text {
+    width: 100%;
+  }
+}
+.wrapper .content .text.order {
+  order: -1;
+}
+.wrapper .content .img-text-wrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 45em) {
+  .wrapper .content .img-text-wrapper {
+    width: 100%;
+  }
+}
+.wrapper .content .img-wrapper {
+  width: 100%;
+  max-width: 250px;
+  position: relative;
+  min-height: 300px;
+}
+@media screen and (max-width: 65em) {
+  .wrapper .content .img-wrapper {
+    height: 400px;
+    width: 100%;
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 45em) {
+  .wrapper .content .img-wrapper {
+    height: 300px;
+    width: 100%;
+    min-height: 300px;
+  }
+}
+.wrapper .content .img-wrapper img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 65em) {
+  .wrapper .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.wrapper .buttons {
+  margin-block: 3rem;
+}
+@media screen and (max-width: 65em) {
+  .wrapper .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=option.component.css.map */

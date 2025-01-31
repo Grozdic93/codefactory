@@ -1,0 +1,203 @@
+@use '../abstracts' as a;
+@use 'sass:map';
+
+::selection {
+
+  background-color: a.clr(special, accent);
+
+}
+
+h1, h2:not(.dialog-title), h3, h4, h5, h6, p, li, .monospace, q {
+  color: a.clr(text, dark);
+  font-family: a.$font-family;
+
+}
+.mat-expansion-panel-header{
+
+  padding: 30px 24px !important;
+  @include a.mq(medium){
+    padding: 40px 24px !important;
+  }
+  [data-theme="dark"] &{
+    background-color: a.clr(special, accent);
+  }
+
+}
+
+.dialog-title {
+  text-align: center;
+  padding-bottom: 0 !important;
+}
+
+
+body, .footer-wrapper {
+
+  //background-image: linear-gradient(to top, #333 12%, white 88%);
+  //background-size: 100% 700%;
+  //background-position: top center;
+  //transition: background-position 2s ease, background-color 500ms ease, color 500ms ease;
+  background-color: a.clr(bg, light);
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+
+  a, span, h1, h2, h3, h4, h5, h6, p, li, q, span {
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+
+  }
+
+  [data-theme="dark"] & {
+    background-position: bottom center;
+    transition-delay: 300ms;
+  }
+}
+
+
+[data-theme="dark"] section {
+  transition-delay: 300ms;
+
+  a, span, h1, h2, h3, h4, h5, h6, p, li, q, span {
+    transition-delay: 300ms;
+
+  }
+
+}
+
+
+a, p, button, input, li {
+  font-size: map.get(a.$font-sizes, 400);
+  font-weight: map.get(a.$font-weight, 300);
+
+
+}
+
+b {
+  font-size: map.get(a.$font-sizes, 400);
+  font-weight: map.get(a.$font-weight, 500);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  font-size: map.get(a.$font-sizes, 500);
+  @include a.mq(medium) {
+    font-size: map.get(a.$font-sizes, 400);
+
+  }
+
+}
+
+h1 {
+  font-size: map.get(a.$font-sizes, 900);
+  font-weight: map.get(a.$font-weight, 900);
+
+}
+
+.h1 {
+  font-size: map.get(a.$font-sizes, 900);
+  font-weight: map.get(a.$font-weight, 900);
+}
+
+.h1m {
+  font-size: map.get(a.$font-sizes, 800);
+  font-weight: map.get(a.$font-weight, 900);
+}
+
+h2 {
+  font-size: map.get(a.$font-sizes, 800);
+  font-weight: map.get(a.$font-weight, 400);
+
+}
+
+h3 {
+  font-size: map.get(a.$font-sizes, 700);
+  font-weight: map.get(a.$font-weight, 500);
+}
+
+h4 {
+  font-size: map.get(a.$font-sizes, 600);
+  font-weight: map.get(a.$font-weight, 500);
+
+}
+
+h5 {
+  font-size: map.get(a.$font-sizes, 500);
+  font-weight: map.get(a.$font-weight, 900);
+
+}
+
+h6 {
+  font-size: map.get(a.$font-sizes, 900);
+  font-weight: map.get(a.$font-weight, 400);
+  @include a.mq(medium) {
+    font-size: map.get(a.$font-sizes, 800);
+  }
+}
+
+.monospace-small {
+  font-family: a.$font-family-accent;
+  font-size: map.get(a.$font-sizes, 400);
+  font-weight: map.get(a.$font-weight, 100);
+  line-height: 25px;
+}
+
+.monospace {
+  font-family: a.$font-family-accent;
+  font-size: map.get(a.$font-sizes, 500);
+  font-weight: map.get(a.$font-weight, 200);
+  line-height: 35px;
+
+
+  &.small {
+    font-size: map.get(a.$font-sizes, 300);
+  }
+
+  &.bold {
+    font-weight: map.get(a.$font-weight, 700);
+
+  }
+
+  @include a.mq(medium) {
+    font-size: map.get(a.$font-sizes, 400);
+  }
+}
+
+.accent {
+  color: a.clr(text, accent);
+}
+
+@include a.mq(medium) {
+  h1, .h1, h2 {
+    font-size: map.get(a.$font-sizes, 700);
+  }
+  .h1m{
+    font-size: map.get(a.$font-sizes, 600);
+  }
+  h4, h6 {
+    font-size: map.get(a.$font-sizes, 500);
+
+  }
+  h3 {
+    font-size: map.get(a.$font-sizes, 600);
+  }
+  h5 {
+    font-size: map.get(a.$font-sizes, 400);
+  }
+
+  a, p, button, input {
+    font-size: map.get(a.$font-sizes, 300);
+  }
+
+}
+
+.mat-mdc-button-base {
+  background-color: a.clr(trans, accent) !important;
+  color: a.clr(special, light) !important;
+
+  &.mat-mdc-button-disabled {
+    opacity: 0.6;
+  }
+}
+

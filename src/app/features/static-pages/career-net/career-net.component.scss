@@ -1,0 +1,55 @@
+@use '../../../../sass/abstracts' as a;
+.btn{
+  width: min(100%, 400px);
+  font-size: 1.2rem;
+  margin-left: 100px;
+  @include a.mq(large){
+    margin-left: unset;
+  }
+}
+.columns{
+  display: grid;
+  gap: 2rem;
+  &.short{
+    width: 80%;
+    margin-inline: auto;
+    gap:4rem;
+    @include a.mq(medium){
+      width: 100%;
+      gap: 2rem;
+    }
+  }
+}
+.indent{
+  display: grid;
+  gap: 2rem;
+  margin-left: 50px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .sprite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include a.mq(large){
+    grid-template-columns: 1fr;
+
+  }@include a.mq(medium){
+    grid-template-columns: 1fr;
+
+  }
+}
+.text-center{
+  text-align: center;
+}
+.arrow-down{
+  font-size: 2rem;
+  font-weight: 900;
+  color: a.clr(text, dark);
+  cursor: pointer;
+}
+.bold{
+  font-weight: 700;
+}

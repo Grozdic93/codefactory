@@ -1,0 +1,107 @@
+@use '../../../../sass/abstracts' as a;
+
+.orb-wrapper{
+  position: fixed;
+  bottom: 165px;
+  right:25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateX(-75deg);
+  z-index: 999;
+
+  @include a.mq('medium'){
+  display: none;
+    .nav-visible &{
+      display: block;
+      bottom: 50px
+    }
+  }
+}
+
+.orb {
+  width: 2em;
+  height: 2em;
+  background-color: #eee;
+  border-radius: 50%;
+  transform: rotateX(75deg);
+  box-shadow: inset -0.2em -0.2em 0.8em rgb(255, 180, 50, 0.5), 0 0 0.2em #fff,
+  0 0 0.4em #fff, 0 0 0.6em rgb(0, 0, 0, 0.1), 0 0 0.8em rgb(0, 0, 0, 0.1),
+  0 0 1.6em rgb(255, 180, 50, 0.5);
+  animation: float 5s ease infinite;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+[data-theme='light'] .orb {
+  background-color: transparent;
+  box-shadow: none;
+}
+.orb::after{
+  content: "";
+  display: none;
+  opacity: 0;
+  transition-property: display, opacity;
+  transition-duration: 0.5s;
+}
+[data-theme='light'] .orb::after {
+  content: "";
+  display: inline-block;
+  opacity: 1;
+  width: 2em;
+  height: 2em;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: inset -0.5em -0.2em 0.1em #000000;
+  @starting-style{
+    opacity: 0;
+  }
+}
+
+
+.orb::before {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  box-shadow: 0 15em 1em rgb(0, 0, 0);
+  opacity: 0.2;
+  transform: rotateX(-75deg);
+  animation: no-float 5s ease infinite;
+}
+
+.orb:hover,
+.orb:hover::before {
+  animation-play-state: paused;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: rotateX(75deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(75deg) translateY(1em);
+  }
+}
+
+@keyframes no-float {
+  0%,
+  100% {
+    transform: rotateX(75deg) translateY(0);
+    opacity: 0.2;
+    box-shadow: 0 15em 1em rgb(0, 0, 0);
+  }
+  50% {
+    transform: rotateX(75deg) translateY(-4em);
+    opacity: 0.4;
+    box-shadow: 0 15em 0.7em rgb(0, 0, 0);
+  }
+}
+

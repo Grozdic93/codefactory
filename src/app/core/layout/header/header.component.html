@@ -1,0 +1,8 @@
+<header class="header" appStickyScroll [scrollThreshold]="110">
+  <button appStickyScroll [scrollThreshold]="110" class="menuBtn" (click)="onSetVisible()">
+    <span  [class.visible]="navVisible()" id="menu-icon"></span>
+  </button>
+  <a class="logo" (click)="onNavReset()" routerLink="/home"><img src="/logo/cf-logo.png" alt="" height="258" width="755"/></a>
+
+  <app-navbar (resetNavbar)="onNavReset()"  [navVisible]="navVisible()"/>
+</header>

@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <img class="backgroundLogo" width="600" height="600" ngSrc="./images/illustrations/wheel.png" alt="" priority>
+  <div class="grid-section-first">
+    <h3 class="h1m">{{ 'courseCategories.title' | translate }}</h3>
+
+  </div>
+  <a (click)="navigate($event,'basic')" (tap)=" navigate($event,'basic')">
+    <app-course-category [imagePath]="'./images/students/4.jpg'"
+                         [overlayTitle]="card1title"
+                       >
+      {{
+        'courseCategories.card1subtitle' | translate
+      }}
+    </app-course-category>
+  </a>
+
+  <a (click)="navigate($event,'full-time')" (tap)="navigate($event,'full-time')">
+    <app-course-category [imagePath]="'./images/students/5.jpg'"
+                         [overlayTitle]="card2title"
+                        >
+      {{
+        'courseCategories.card2subtitle' | translate
+      }}
+    </app-course-category>
+  </a>
+
+  <a (click)="navigate($event,'part-time')" (tap)="navigate($event,'part-time')">
+    <app-course-category [imagePath]="'./images/students/6.jpg'"
+                         [overlayTitle]="card3title"
+                      >
+      {{
+        'courseCategories.card3subtitle' | translate
+      }}
+    </app-course-category>
+  </a>
+
+
+</div>

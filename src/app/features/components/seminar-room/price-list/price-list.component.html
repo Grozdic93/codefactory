@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <h3 class="title">{{ 'seminarRoom.prices.title' | translate }}</h3>
+  <table class="price-table">
+    <thead>
+    <tr>
+      <th></th>
+      <th>{{ 'seminarRoom.prices.hour' | translate }}</th>
+      <th>{{ 'seminarRoom.prices.day' | translate }}</th>
+      <th>{{ 'seminarRoom.prices.weekend' | translate }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th>{{ 'seminarRoom.prices.small' | translate }}</th>
+      <td>25 €</td>
+      <td>200 €</td>
+      <td>350 €</td>
+    </tr>
+    <tr>
+      <th>{{ 'seminarRoom.prices.big' | translate }}</th>
+      <td>35 €</td>
+      <td>300 €</td>
+      <td>450 €</td>
+    </tr>
+    <tr>
+      <th>{{ 'seminarRoom.prices.both' | translate }}</th>
+      <td>59 €</td>
+      <td>480 €</td>
+      <td>700 €</td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="flex">
+    <div>
+      <p class="monospace-small">{{ 'seminarRoom.prices.net' | translate }}
+      </p>
+      <p class="monospace-small">{{ 'seminarRoom.prices.info' | translate }}</p>
+    </div>
+    <button class="btn" mat-fab extended (click)="openContactDialog()"><span class="btn__span">
+      {{ 'seminarRoom.prices.button' | translate }}
+    </span></button>
+  </div>
+</div>

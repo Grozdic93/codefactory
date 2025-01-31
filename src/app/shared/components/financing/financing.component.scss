@@ -1,0 +1,81 @@
+@use '../../../../sass/abstracts/index' as a;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  @include a.mq(medium){
+
+  }
+
+  .financing-title {
+    font-weight: 900;
+  }
+
+  .financing-cards {
+    margin-bottom:100px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    @include a.mq(medium){
+      width: 100%;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin-inline: auto;
+    }
+
+  }
+
+  .financing-option {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    margin-inline: auto;
+    @include a.mq(medium){
+      width: 50%;
+    }
+
+    &__description{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      padding:1rem
+    }
+
+    &__img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .financing-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    button {
+      font-size: 1.2rem;
+    }
+    @include a.mq(medium){
+     flex-direction: column;
+      gap: 2rem;
+
+    }
+    button{
+      width: 300px;
+      @include a.mq(medium){
+        width: 100%;
+      }
+    }
+  }
+}
+

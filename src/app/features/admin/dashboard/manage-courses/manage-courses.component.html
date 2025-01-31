@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <h2>Manage Courses</h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Starting Date</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let course of courses">
+      <td>{{ course | translateObject:'name':'nameDe'}}</td>
+      <td>{{ course.dates[0].startDate | date:'mediumDate' }}</td>
+      <td class="btn-container">
+        <button class="btn" (click)="setCourseToEdit(course)">Edit</button>
+        <button class="btn btn-sm btn-danger" (click)="deleteCourse(course)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <app-edit-course *ngIf="courseToEdit" [course]="courseToEdit" (courseEdited)="handleCourseEdited($event)"></app-edit-course>
+</div>

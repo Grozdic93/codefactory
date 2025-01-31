@@ -1,0 +1,14 @@
+.aside-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: max(50%, 40rem);
+  color: gray;
+}
+
+/*# sourceMappingURL=landing-page.component.css.map */

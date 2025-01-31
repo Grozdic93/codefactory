@@ -1,0 +1,52 @@
+@use '../../../../../sass/abstracts/index' as a;
+.logo-scroller {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  max-width: 100%;
+  &::before,  &::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+  }
+  &::before {
+    left: 0;
+    background-image: linear-gradient(to right, a.clr(bg, light) 10%, transparent);
+
+  }
+  &::after {
+    right: 0;
+    background-image: linear-gradient(to left, a.clr(bg, light) 10%, transparent);
+
+  }
+
+
+}
+
+.logos {
+  position: relative;
+  display: inline-block;
+  animation: scroll 50s linear infinite alternate;
+  height: 100px;
+
+
+}
+
+.logos img {
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
+  //height: 50px;
+  margin: 0 40px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}

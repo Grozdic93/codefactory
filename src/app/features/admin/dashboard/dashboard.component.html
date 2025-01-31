@@ -1,0 +1,15 @@
+
+<div class="dashboard-wrapper">
+  <div class="nav">
+    <a [routerLink]="['/admin', 'dashboard', 'add-course']">Add Course</a>
+    <a [routerLink]="['/admin', 'dashboard', 'manage-courses']">Manage Courses</a>
+    <a [routerLink]="['/admin', 'dashboard', 'manage-users']">Manage Users</a>
+
+    <button *ngIf="isLoggedIn" (click)="onLogout()">Logout</button>
+  </div>
+
+  <div class="content">
+<router-outlet/>
+  </div>
+</div>
+

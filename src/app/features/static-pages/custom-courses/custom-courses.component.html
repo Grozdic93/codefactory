@@ -1,0 +1,62 @@
+<app-section>
+  <app-hero
+    [title]="'customCourses.title' | translate "
+    [img]="'images/illustrations/custom-courses.gif'"
+  >
+    <p class="monospace">
+      {{ 'customCourses.subtitle' | translate }}
+    </p>
+
+  </app-hero>
+
+</app-section>
+
+<app-section>
+  <app-benefits/>
+</app-section>
+<app-section>
+  <app-option
+    [title]="'customCourses.info.title' | translate"
+    [image]="'images/custom-courses/custom-courses-info.png'"
+  >
+    <div text class="grid">
+
+      <div class="column">
+        <p class="monospace bolder">{{ 'customCourses.info.column1.title' | translate }}</p>
+        <p class="monospace">{{ 'customCourses.info.column1.subtitle' | translate }}</p>
+      </div>
+
+      <div class="column">
+        <p class="monospace bolder">{{ 'customCourses.info.column2.title' | translate }}</p>
+        <p class="monospace">{{ 'customCourses.info.column2.subtitle' | translate }}</p>
+      </div>
+
+      <div class="column">
+        <p class="monospace bolder">{{ 'customCourses.info.column3.title' | translate }}</p>
+        <p class="monospace">{{ 'customCourses.info.column3.subtitle' | translate }}</p>
+      </div>
+    </div>
+
+  </app-option>
+</app-section>
+
+
+<app-section>
+  <app-option
+    [image]="'./images/custom-courses/19.png'"
+    [title]="'customCourses.hire.title' | translate"
+    [textLeft]="true"
+  >
+    <div text>
+      <p class="monospace" style="margin-bottom: 60px">{{ 'customCourses.hire.text' | translate }}</p>
+      <p class="monospace">{{ 'customCourses.hire.text2' | translate }}</p>
+
+    </div>
+    <div class="btn-wrapper" buttons>
+      <button class="btn" mat-fab extended (click)="openDialog()">{{ 'customCourses.hire.button' | translate }}</button>
+
+    </div>
+  </app-option>
+</app-section>
+
+<app-students-projects/>

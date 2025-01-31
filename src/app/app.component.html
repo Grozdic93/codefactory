@@ -1,0 +1,11 @@
+<app-language-switch></app-language-switch>
+<app-header></app-header>
+<app-theme-switch></app-theme-switch>
+<div class="content-wrapper">
+  <div [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+
+</div>
+<app-footer/>
+<app-scroll-indicator/>

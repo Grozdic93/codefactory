@@ -1,0 +1,35 @@
+@use '../../../../sass/abstracts' as a;
+
+.language-switch-button {
+  color: a.clr(text, dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  min-width: 70px;
+  white-space: nowrap;
+  background-color: transparent;
+  position: fixed;
+  bottom: 90px;
+  right: 5px;
+  z-index: 999;
+  @include a.mq(medium){
+    bottom: unset;
+    top: 35px;
+    right: 60px;
+  }
+  span{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+  }
+
+}
+
+.language-switch-button:active {
+  transform: scale(0.95);
+}

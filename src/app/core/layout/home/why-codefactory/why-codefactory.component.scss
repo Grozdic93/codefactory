@@ -1,0 +1,43 @@
+@use '../../../../../sass/abstracts' as a;
+
+.wrapper {
+  display: flex;
+  gap: 4rem;
+  @include a.mq('large'){
+    flex-direction: column;
+    //gap: 2rem;
+  }
+
+  & > * {
+    flex: 1;
+  }
+
+  .img {
+    background-image: url('/images/cf-room.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    @include a.mq('large') {
+      min-height: 400px;
+    }
+  }
+
+  .aside {
+    &__title {
+      padding-bottom: 3rem
+    }
+
+    &__list {
+      padding-inline: 2rem;
+    }
+
+    &__list-item {
+      padding-block: .4rem;
+    }
+    &__btn{
+      display:flex;
+      justify-content: end;
+      padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../../../sass/abstracts' as a;
+
+.content-wrapper{
+  .column{
+    margin-bottom: 3rem;
+    &:last-child{
+      margin-bottom: 7rem;
+    }
+    .monospace{
+      text-align: justify;
+      @include a.mq(medium){
+        text-align: start;
+      }
+      &.bold{
+        margin-bottom:.5rem;
+      }
+    }
+  }
+
+}
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.list{
+  margin-inline: 2rem;
+}

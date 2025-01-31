@@ -1,0 +1,92 @@
+[data-theme=light] {
+  --bg-light: #f5f5f5;
+  --bg-neutral: #333;
+  --bg-dark: black;
+  --bg-accent:#900000;
+  --bg-accent-gold: #A6936E;
+  --text-light: #f5f5f5;
+  --text-neutral: #333;
+  --text-dark: black;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 100% /.7);
+  --transparent-dark: hsla(0 0% 0% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: white;
+  --bg-gradient-normal: #f5f5f5;
+  --scoller-clr: #FEFEFE;
+  --transparent: transparent;
+}
+
+:root {
+  --swich-color: #4a4e69;
+  --swich-background: #f4f3f2;
+}
+
+[data-theme=dark] {
+  --swich-color: #c9ada7;
+  --background: #11112a;
+  --bg-light: #333;
+  --bg-neutral: black;
+  --bg-dark: #f5f5f5;
+  --bg-accent:#A6936E;
+  --bg-accent-gold: #A6936E;
+  --text-light: black;
+  --text-neutral: black;
+  --text-dark: #f5f5f5;
+  --special-light-light: #f5f5f5;
+  --special-normal-normal: #333;
+  --special-dark-dark: black;
+  --transparent-light: hsla(0 0% 0% /.7);
+  --transparent-dark: hsla(0 0% 100% /.7);
+  --blur:.5rem;
+  --bg-gradient-light: #333;
+  --bg-gradient-normal: #444;
+  --scoller-clr: #333333;
+  --transparent: #A6936E;
+}
+
+:root {
+  --dropdown-link-font-size: .8rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 4rem;
+}
+@media screen and (max-width: 65em) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+.wrapper > * {
+  flex: 1;
+}
+.wrapper .img {
+  background-image: url("/images/cf-room.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+@media screen and (max-width: 65em) {
+  .wrapper .img {
+    min-height: 400px;
+  }
+}
+.wrapper .aside__title {
+  padding-bottom: 3rem;
+}
+.wrapper .aside__list {
+  padding-inline: 2rem;
+}
+.wrapper .aside__list-item {
+  padding-block: 0.4rem;
+}
+.wrapper .aside__btn {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=why-codefactory.component.css.map */

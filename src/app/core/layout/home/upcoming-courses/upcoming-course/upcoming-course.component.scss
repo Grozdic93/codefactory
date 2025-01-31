@@ -1,0 +1,25 @@
+@use '../../../../../../sass/abstracts/index' as a;
+
+.course-item{
+  padding: 2rem;
+  border-bottom: 1px solid a.clr(special, accent);
+  cursor: pointer;
+  &:hover{
+    background-color: #e0e0e0;
+  }
+}
+
+.flex{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  @include a.mq('medium') {
+    flex-direction: column;
+  }
+}
+.date{
+  border: 1px solid a.clr(bg, dark);
+  padding: .7rem;
+  white-space: nowrap;
+}

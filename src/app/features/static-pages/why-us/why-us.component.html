@@ -1,0 +1,101 @@
+<app-section>
+  <app-hero
+    [title]="'why.title' | translate"
+    [img]="'/images/why-us/why-hero.png'">
+    <p class="monospace-small">
+      {{ 'why.subtitle' | translate }}
+    </p>
+  </app-hero>
+</app-section>
+<app-section>
+  <app-benefits/>
+</app-section>
+<div class="divider">
+  <app-section>
+    <app-top-choice
+      [image]="'/images/why-us/why-top-choice.png'"
+      [imgTitle]="'why.topChoice.title' | translate">
+      <div text>
+        <div class="columns">
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p1Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p1Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p2Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p2Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p3Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p3Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p4Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p4Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p5Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p5Text' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </app-top-choice>
+  </app-section>
+</div>
+<div class="divider">
+  <app-section>
+    <app-top-choice
+      [image]="'/images/why-us/why-cert.png'"
+      [textLeft]="true">
+      <div text>
+        <div class="columns">
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p6Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p6Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p7Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p7Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p8Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p8Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p9Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p9Text' | translate }}</p>
+          </div>
+          <div class="column">
+            <p class="monospace-small bold">{{ 'why.topChoice.p10Title' | translate }}</p>
+            <p class="monospace-small">{{ 'why.topChoice.p10Text' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </app-top-choice>
+  </app-section>
+</div>
+<app-mini-section>
+  <app-option
+    [title]="'why.statistics.title' | translate"
+    [image]="'/images/why-us/why-statistics.png'"
+    [textLeft]="true">
+    <div class="columns" text>
+      <p class="monospace">
+      {{ 'why.statistics.text1' | translate }}
+    </p>
+      <p class="monospace">
+        {{ 'why.statistics.text2' | translate }}
+      </p>
+    </div>
+    <div buttons class="center">
+      <p class="monospace">
+        {{ 'why.statistics.text3' | translate }}
+      </p>
+      <button class="btn" mat-fab extended (click)="openDialog()">{{ 'customCourses.hire.button' | translate }}</button>
+
+    </div>
+  </app-option>
+
+
+</app-mini-section>
+<app-students-projects/>

@@ -1,0 +1,106 @@
+<ul class="nav" [class.visible-nav]="navVisible">
+
+  <app-nav-link [coursesClass]="true" [isDropdown]="true" tabindex="0">
+    @if(isSmallScreen){
+      <span  main-link>
+      {{ 'navbar.courses' | translate }}
+        <i class="arrow-down fa-solid fa-chevron-down"></i>
+        </span>
+    } @else {
+      <span (click)="onNavigateToCoursesSection($event)" main-link>
+      {{ 'navbar.courses' | translate }}
+        <i class="arrow-down fa-solid fa-chevron-down"></i>
+    </span>
+    }
+
+    <div class="dropdown-list-item__div" dropdown-item *ngFor="let course of coursesNamesForNavbar">
+      <li class="dropdown-list-item">
+        <a class="dropdownLink" tabindex="0"
+           (click)="navigate($event, '/courses/course-details/' + course.id)"
+        >
+          <div class="course-dropdown-item"><img class="small-img" src="/images/course-small-images/{{course.img}}.png"
+                                                 alt="">{{ course | translateObject:'name':'nameDe' }}
+          </div>
+        </a>
+      </li>
+    </div>
+
+  </app-nav-link>
+
+  <app-nav-link [isDropdown]="true">
+    <span main-link>
+      {{ 'navbar.about.main' | translate }}
+      <i class="arrow-down fa-solid fa-chevron-down"></i></span>
+    <li class="dropdown-list-item" dropdown-item>
+      <a class="dropdownLink" (click)="navigate($event, '/faq')">
+        {{ 'navbar.about.faq' | translate }}
+      </a>
+    </li>
+
+    <li class="dropdown-list-item" dropdown-item>
+      <a (click)="navigate($event, '/payment-and-financing')" class="dropdownLink">
+        {{ 'navbar.about.payment' | translate }}
+        Options</a></li>
+
+    <!--    <li class="dropdown-list-item" dropdown-item><a class="dropdownLink" routerLink="/service2">-->
+    <!--      {{ 'navbar.about.news' | translate }}-->
+    <!--    </a></li>-->
+
+    <li class="dropdown-list-item" dropdown-item>
+      <a class="dropdownLink" (click)="navigate($event, '/brand-ambassador')">
+        {{ 'navbar.about.brand' | translate }}
+        ambassador</a>
+    </li>
+
+    <li class="dropdown-list-item" dropdown-item><a
+      class="dropdownLink"
+      (click)="navigate($event, '/team')"
+    >
+      {{ 'navbar.about.team' | translate }}
+    </a></li>
+  </app-nav-link>
+
+  <app-nav-link [isDropdown]="true">
+    <span main-link>
+      {{ 'navbar.whyUs.main' | translate }}
+      <i class="arrow-down fa-solid fa-chevron-down"></i></span>
+    <li class="dropdown-list-item" dropdown-item>
+      <a class="dropdownLink" (click)="navigate($event, '/why-us')">
+        {{ 'navbar.whyUs.cf' | translate }}
+      </a>
+    </li>
+
+    <li class="dropdown-list-item" dropdown-item>
+      <a class="dropdownLink" (click)="navigate($event, '/projects')">
+        {{ 'navbar.whyUs.projects' | translate }}
+      </a>
+    </li>
+  </app-nav-link>
+
+  <app-nav-link [isDropdown]="true">
+    <span main-link>
+      {{ 'navbar.companies.main' | translate }}
+      <i class="arrow-down fa-solid fa-chevron-down"></i></span>
+    <li class="dropdown-list-item" dropdown-item><a class="dropdownLink" (click)="navigate($event, '/custom-courses')">
+      {{ 'navbar.companies.custom' | translate }}
+    </a></li>
+
+    <li class="dropdown-list-item" dropdown-item>
+      <a class="dropdownLink" (click)="navigate($event, '/career-net')">
+        {{ 'navbar.companies.career' | translate }}
+      </a>
+    </li>
+
+    <li class="dropdown-list-item" dropdown-item><a class="dropdownLink" (click)="navigate($event, '/seminar-rooms')">
+      {{ 'navbar.companies.book' | translate }}
+    </a></li>
+
+  </app-nav-link>
+
+  <app-nav-link style="cursor: pointer" (click)="openDialog()" [class]="'active-always'">
+    {{ 'navbar.joinUs' | translate }}
+  </app-nav-link>
+
+
+</ul>
+

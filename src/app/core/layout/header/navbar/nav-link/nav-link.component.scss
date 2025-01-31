@@ -1,0 +1,133 @@
+@use '../../../../../../sass/abstracts' as a;
+
+.nav__list-item {
+  text-transform: uppercase;
+  position: relative;
+  list-style: none;
+  flex: 1;
+
+  //padding-inline: .5rem;
+  border-radius: 7px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: a.clr(special, accent);
+    z-index: -1;
+    transition-property: height, border-radius;
+    transition-duration: 500ms;
+  }
+
+  .sticky .link {
+    color: a.clr(text, dark);
+
+  }
+
+  &.active{
+    color: a.clr(special, light);
+  }
+  &.active-always {
+    & .link {
+      color: a.clr(special, light);
+      width: 110px;
+      text-align: center;
+    }
+
+    &::before {
+      height: 100%;
+      border-radius: 7px;
+    }
+  }
+
+  &:hover, &:focus-within, &:focus {
+    &:before {
+      height: 100%;
+      border-radius: 7px;
+    }
+
+    & .link {
+      color: a.clr(special, dark);
+    }
+  }
+
+  &.dropdown {
+    min-width: 148px;
+
+    .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      max-height: 0;
+      overflow: hidden;
+      width: 200%;
+      position: absolute;
+      right: 0;
+      transform: translate(50%, 0);
+      background-color: #f9f9f9;
+      min-width: 120px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      transition: max-height 100ms, background-color 500ms, color 500ms;
+
+      @include a.mq('medium'){
+        left: 0;
+        bottom: 100%;
+        transform: translate(0, 0);
+        width: 130%;
+        overflow: scroll;
+        &.courseClass{
+          height: 280px;
+          overflow: scroll;
+          bottom: unset;
+        }
+
+      }
+    }
+
+    &:hover .dropdown-content,
+    &.open .dropdown-content,
+    {
+      //&:focus-within .dropdown-content
+      max-height: 800px;
+
+    }
+  }
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: a.clr(text, dark);
+  transition: color 500ms ease, background-color 500ms ease;
+  font-weight: 300;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  padding-block: .7rem;
+
+
+}
+
+
+@include a.mq(medium) {
+  .nav.visible-nav {
+    &__list-item {
+
+      display: grid;
+      place-content: center;
+
+      & .link {
+        z-index: 2;
+
+      }
+    }
+
+    &__list-item::before {
+      z-index: 1;
+    }
+  }
+}

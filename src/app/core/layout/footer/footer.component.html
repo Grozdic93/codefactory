@@ -1,0 +1,97 @@
+<footer class="footer-wrapper">
+  <h3>{{ "footer.title" | translate }}</h3>
+  <div class="monospace">
+    {{ "footer.subtitle" | translate }}
+  </div>
+  <div class="split">
+    <div class="interested">
+      <h5>{{ "footer.buttons.title" | translate }}</h5>
+      <div class="buttons">
+        <button (click)="openDialog()" class="btn outline">
+          {{ "footer.buttons.join" | translate }}
+        </button>
+        <button (click)="openContactDialog()" class="btn outline">
+          {{ "footer.buttons.contact" | translate }}
+        </button>
+      </div>
+    </div>
+
+    <div class="follow">
+      <h5>{{ "footer.socials.title" | translate }}</h5>
+      <div class="socials outline">
+        <span class="hidable">{{ "footer.socials.text" | translate }}</span>
+        <div class="social-wrap">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/codefactoryvienna/"
+          >
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a target="_blank" href="https://www.facebook.com/CodeFactoryVienna/">
+            <i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a target="_blank" href="https://x.com/codefactoryvie">
+            <i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCJE5xsfz-bLmVb5emobgOkw"
+          >
+            <i class="fa-brands fa-youtube"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/codefactory-vienna"
+          >
+            <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="info">
+    <div class="info__logo">
+      <img src="/images/LogoRound.png" alt="Code Factory Logo" />
+    </div>
+
+    <div class="info__address">
+      <div class="flex">
+        <div>
+          <h5>{{ "footer.email" | translate }}</h5>
+          <p>
+            <a href="mailto:office@codefactory.wien"
+              >office&#64;codefactory.wien</a
+            >
+          </p>
+        </div>
+        <div>
+          <h5>{{ "footer.address" | translate }}</h5>
+          <p>Kettenbrückengasse 23/2/12</p>
+          <p>1050 {{ "footer.city" | translate }}</p>
+        </div>
+      </div>
+      <hr />
+      <div class="links">
+        <a class="footer-link" (click)="openContactDialog()">{{
+          "footer.links.link1" | translate
+        }}</a>
+        <a class="footer-link" routerLink="/mission-statement">{{
+          "footer.links.link2" | translate
+        }}</a>
+        <a class="footer-link" routerLink="/imprint">{{
+          "footer.links.link3" | translate
+        }}</a>
+        <a class="footer-link" routerLink="/terms-and-conditions">{{
+          "footer.links.link4" | translate
+        }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyrights">
+    <p class="monospace-small">
+      &copy; 2024 CodeFactory Vienna GmbH. {{ "footer.copy" | translate }}
+    </p>
+  </div>
+</footer>

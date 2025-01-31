@@ -1,0 +1,45 @@
+<div class="manage-users">
+  <h1>Manage Users and Admins</h1>
+
+  <div class="user-admin-sections">
+    <div class="users-section">
+      <h2>Users</h2>
+      <ul>
+        <ng-container *ngFor="let user of users$ | async">
+          <li *ngIf="!user.admin">
+            {{ user.email }}
+            <button (click)="promoteToAdmin(user)">Promote to Admin</button>
+            <button (click)="deleteUser(user)">Delete</button>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+
+    <div class="admins-section">
+      <h2>Admins</h2>
+      <ul>
+        <ng-container *ngFor="let user of users$ | async">
+          <li *ngIf="user.admin">
+            {{ user.email }}
+            <button (click)="deleteUser(user)">Delete</button>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+
+  <div class="create-admin">
+    <h2>Create New User</h2>
+    <form (ngSubmit)="createUser()">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="newAdminEmail" name="email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="newAdminPassword" name="password" required>
+      </div>
+      <button type="submit">Create User</button>
+    </form>
+  </div>
+</div>

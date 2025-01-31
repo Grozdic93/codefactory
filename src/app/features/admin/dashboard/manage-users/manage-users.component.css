@@ -1,0 +1,50 @@
+.manage-users h1 {
+  text-align: center;
+}
+.manage-users .user-admin-sections {
+  display: flex;
+  justify-content: space-around;
+}
+.manage-users .user-admin-sections .users-section, .manage-users .user-admin-sections .admins-section {
+  width: 45%;
+}
+.manage-users .user-admin-sections ul {
+  list-style-type: none;
+  padding: 0;
+}
+.manage-users .user-admin-sections li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.manage-users .user-admin-sections button {
+  margin-left: 0.5rem;
+}
+.manage-users .create-admin {
+  margin-top: 2rem;
+  text-align: center;
+}
+.manage-users .create-admin form {
+  display: inline-block;
+  text-align: left;
+}
+.manage-users .create-admin form div {
+  margin-bottom: 1rem;
+}
+.manage-users .create-admin form label {
+  display: inline-block;
+  width: 100px;
+}
+.manage-users .create-admin form input {
+  padding: 0.5rem;
+  width: 200px;
+}
+.manage-users .create-admin form button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=manage-users.component.css.map */

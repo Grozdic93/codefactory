@@ -1,0 +1,28 @@
+@use '../../../../../sass/abstracts' as a;
+.wrapper{
+  min-height: 90lvh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  text-align: center;
+  margin-bottom: 300px;
+  @include a.mq(medium){
+    min-height: 500px;
+    margin-bottom: 200px;
+
+  }
+  h3, p{
+    width: 70%;
+    margin-inline: auto;
+    @include a.mq(medium){
+      width: 95%;
+    }
+  }
+
+}
+
+
+
+
+

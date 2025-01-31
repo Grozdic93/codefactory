@@ -1,0 +1,144 @@
+<app-section>
+  <app-hero
+    [title]="'paymentAndFinancing.title' | translate"
+    [img]="'/images/illustrations/financing.png'"
+  >
+    <p class="monospace">
+      {{ "paymentAndFinancing.subtitle" | translate }}
+    </p>
+  </app-hero>
+</app-section>
+
+<app-section>
+  <app-financing>
+    <div (click)="navigateToSection(ams)" class="arrow-down" ams>
+      <i class="fa-solid fa-angle-down fa-2xl"></i>
+    </div>
+    <div (click)="navigateToSection(partial)" class="arrow-down" partial>
+      <i class="fa-solid fa-angle-down fa-2xl"></i>
+    </div>
+    <div (click)="navigateToSection(employer)" class="arrow-down" employer>
+      <i class="fa-solid fa-angle-down fa-2xl"></i>
+    </div>
+    <div (click)="navigateToSection(erste)" class="arrow-down" erste>
+      <i class="fa-solid fa-angle-down fa-2xl"></i>
+    </div>
+  </app-financing>
+</app-section>
+<div #ams>
+  <app-section>
+    <app-option
+      [title]="'paymentAndFinancing.ams/waff.title' | translate"
+      [image]="'/images/financing/AMS-WAFF.png'"
+    >
+      <div text>
+        <div class="column">
+          <p class="monospace indent">
+            <i class="fa-solid fa-circle"></i
+            >{{ "paymentAndFinancing.ams/waff.ams.title" | translate }}
+          </p>
+          <p class="monospace">
+            {{ "paymentAndFinancing.ams/waff.ams.text" | translate }}
+          </p>
+          <br />
+          <p class="monospace indent">
+            <i class="fa-solid fa-circle"></i
+            >{{ "paymentAndFinancing.ams/waff.waff.title" | translate }}
+          </p>
+          <p class="monospace">
+            {{ "paymentAndFinancing.ams/waff.waff.text" | translate }}.
+          </p>
+        </div>
+      </div>
+      <div buttons class="btns">
+        <span></span>
+        <button mat-fab extended (click)="openEstimateDialog()">
+          {{ "financing.buttonGetEstimate" | translate }}
+        </button>
+      </div>
+    </app-option>
+  </app-section>
+</div>
+<div #partial>
+  <app-section>
+    <app-option
+      [textLeft]="true"
+      [title]="'paymentAndFinancing.partial.title' | translate"
+      [image]="'/images/financing/PARTIAL.png'"
+    >
+      <div text>
+        <div class="column">
+          <p class="monospace">
+            {{ "paymentAndFinancing.partial.p1" | translate }}
+          </p>
+          <br />
+          <p class="monospace">
+            {{ "paymentAndFinancing.partial.p2" | translate }}
+          </p>
+          <br />
+          <p class="monospace">
+            {{ "paymentAndFinancing.partial.p3" | translate }}
+          </p>
+        </div>
+      </div>
+    </app-option>
+  </app-section>
+</div>
+<div #erste>
+  <app-section>
+    <app-option
+      [title]="'paymentAndFinancing.erste.title' | translate"
+      [image]="'/images/financing/erste.png'"
+    >
+      <div text>
+        <div class="column">
+          <p class="monospace">
+            {{ "paymentAndFinancing.erste.p1" | translate }}
+          </p>
+          <p class="monospace">
+            {{ "paymentAndFinancing.erste.p2" | translate }}
+          </p>
+        </div>
+      </div>
+      <div buttons class="btns">
+        <span></span>
+        <button mat-fab extended (click)="openEstimateDialog()">
+          {{ "financing.buttonGetEstimate" | translate }}
+        </button>
+      </div>
+    </app-option>
+  </app-section>
+</div>
+<div #employer>
+  <app-section>
+    <app-option
+      [textLeft]="true"
+      [title]="'paymentAndFinancing.employer.title' | translate"
+      [image]="'/images/financing/EMPLOYER.png'"
+    >
+      <div text>
+        <div class="column">
+          <p class="monospace">
+            {{ "paymentAndFinancing.employer.p1" | translate }}
+          </p>
+          <br />
+          <p class="monospace">
+            {{ "paymentAndFinancing.employer.p2" | translate }}
+          </p>
+          <br />
+          <p class="monospace">
+            {{ "paymentAndFinancing.employer.p3" | translate }}
+          </p>
+        </div>
+      </div>
+      <div buttons class="btns">
+        <button mat-fab extended (click)="openEstimateDialog()">
+          {{ "financing.buttonGetEstimate" | translate }}
+        </button>
+        <button mat-fab extended (click)="openEstimateDialog('register')">
+          {{ "financing.buttonJoinUs" | translate }}
+        </button>
+      </div>
+    </app-option>
+  </app-section>
+</div>

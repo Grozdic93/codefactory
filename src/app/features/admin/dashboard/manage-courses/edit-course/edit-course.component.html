@@ -1,0 +1,16 @@
+@if(course){
+
+<div>
+  <h2>Edit Course</h2>
+  <form [formGroup]="myForm" (ngSubmit)="editCourse()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input formControlName="name" type="text" class="form-control" id="name"  required>
+    </div>
+    <div class="form-group">
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <button type="button" class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
+  </form>
+</div>
+}

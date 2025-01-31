@@ -1,0 +1,34 @@
+<div class="wrapper">
+
+  <h3>{{ title }}</h3>
+  @if(subtitle != ''){
+  <p class="monospace">{{ subtitle }}</p>
+  }
+  <div class="slider-wrapper-custom-made">
+    <section class="swiper-container loading {{swiperClass}}">
+      <div class="swiper-wrapper">
+        @for (img of images; track $index) {
+          <div class="swiper-slide"
+               [style.background-image]="'url(images/rooms/' + img + ')'">
+            <img
+              [src]="'/images/rooms/'+ img"
+              class="entity-img"/>
+          </div>
+        }
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </section>
+  </div>
+  <!--  <app-slider [images]="images"/>-->
+</div>
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+.file-input {
+  display: none;
+}
+.example-full-width {
+  width: 100%;
+}
+.extra-small{
+  font-size: 12px;
+  width: 70%;
+  margin-inline: auto;
+  padding-top: 1rem;
+  opacity: 0.7;
+}
+.flex-in-dialog{
+display: flex;
+  gap: 5px;
+  & > *{
+    flex: 1;
+  }
+}

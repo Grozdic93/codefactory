@@ -1,0 +1,18 @@
+.dashboard-wrapper {
+  padding-top: 8rem;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 5fr;
+  gap: 2rem;
+}
+.dashboard-wrapper .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 8rem;
+}
+
+/*# sourceMappingURL=dashboard.component.css.map */

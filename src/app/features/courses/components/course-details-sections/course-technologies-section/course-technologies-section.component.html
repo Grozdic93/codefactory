@@ -1,0 +1,28 @@
+
+@if(tech){
+  <app-mini-section>
+
+
+  <div class="wrapper">
+    <h3 class="h1">{{ 'courseDetails.tech.title' | translate }}</h3>
+    <div class="columns">
+      @for(techItem of tech; track $index){
+        <div class="column">
+          <h4>{{ techItem.techName }}</h4>
+          <ul>
+            @for(tag of techItem.techTags; track $index){
+              <li>{{ tag }}</li>
+            }
+          </ul>
+        </div>
+
+      }
+    </div>
+    <div class="img-wrapper">
+      <img  src="/gifs/wheels.gif" alt="">
+    </div>
+
+  </div>
+  </app-mini-section>
+}
+

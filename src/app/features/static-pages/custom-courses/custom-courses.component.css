@@ -1,0 +1,14 @@
+.bolder {
+  font-weight: 800;
+}
+
+.btn {
+  width: min(100%, 400px);
+  font-size: 1.2rem;
+}
+
+.column {
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=custom-courses.component.css.map */
