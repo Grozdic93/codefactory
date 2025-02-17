@@ -23,6 +23,28 @@ cd codefactory-website
 
 # Install dependencies
 npm install
+## Environment Configuration
+
+Before running the project, you need to create an environment file (`environment.ts`) with the following structure:
+
+```typescript
+export const environment = {
+  production: true, // or false in environment.development.ts
+  backendUrl: "your backend url for firebase admin sdk",
+  backendUrlS: "your backend url for email handling",
+  // firebase configuration
+  firebase: {
+    apiKey: "...",
+    authDomain: "...",
+    projectId: "...",
+    storageBucket: "...",
+    messagingSenderId: "...",
+    appId: "..."
+  },
+  recaptchaSiteKey: "your recaptcha google api",
+  googleCloudApiKey: "your google cloud api"
+};
+```
 
 # Start the development server
 - ng serve
