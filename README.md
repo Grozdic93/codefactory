@@ -1,27 +1,44 @@
-# CodeFactory
+# CodeFactory Website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
-## Development server
+## Description
+This is a website developed for CodeFactory, built using Angular and other modern web technologies. The project is open-source, but any modifications or distributions must provide proper credit to the original author.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- Fully responsive design
+- API integration
+- User authentication
+- Dynamic content management
+- SEO-friendly structure
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run this project locally, follow these steps:
+# Clone the repository
+git clone https://github.com/yourusername/codefactory-website.git
 
-## Build
+# Navigate to the project directory
+cd codefactory-website
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Install dependencies
+npm install
 
-## Running unit tests
+# Start the development server
+ng serve
+Then open http://localhost:4200/ in your browser.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
+- This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Running end-to-end tests
+## Author
+Dusan Grozdic
+For any inquiries, feel free to reach out!
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contributions
+Contributions are welcome! If you want to contribute:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Fork the repository
+Create a new branch
+Commit your changes
+Submit a pull request
