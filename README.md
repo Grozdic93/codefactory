@@ -25,15 +25,15 @@ cd codefactory-website
 npm install
 
 # Start the development server
-ng serve
-Then open http://localhost:4200/ in your browser.
+- ng serve
+- Then open http://localhost:4200/ in your browser.
 
 ## License
 - This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Author
 Dusan Grozdic
-For any inquiries, feel free to reach out!
+- For any inquiries, feel free to reach out!
 
 ## Contributions
 Contributions are welcome! If you want to contribute:
